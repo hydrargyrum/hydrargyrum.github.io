@@ -1,0 +1,52 @@
+---
+layout: mine
+---
+
+# ImageMagick stuff #
+
+A few images or snippets made with ImageMagick
+
+# Embossing #
+
+To emboss an image, and use the result as a mask to overlay an image.
+
+```
+convert tux.png -colorspace gray -fx 'u-p[-1,-1]+.5' tmp.mask.png
+convert other.png tmp.mask.png -gravity center -compose overlay -composite result.png
+```
+
+![terminal](term.png) + ![Tux](tux.png) -> ![Mask](mask.png) -> ![Embossed Tux](tuxterm.png)
+
+# Read a CAPTCHA on console #
+
+A grayscale CAPTCHA image (like reCAPTCHA's) can be read on console with the help of [XPM format http://en.wikipedia.org/wiki/X_PixMap].
+XPM format is a format where each pixel is represented by an ASCII character.
+
+```
+convert captcha2-sample.jpg -negate -resize "200%x100%!" -colors 4 xpm: | less -S
+```
+
+Negate can be used if the image has a white background. Number of colors is reduced to 4 for less graphical clutter. Image is expanded 2 times in width to compensate a little that ASCII characters are higher than wide unlike pixel which are square.
+
+![CAPTCHA sample](captcha2-sample.jpg)
+
+becomes (1920x1080 console)
+
+![ASCII CAPTCHA](captcha2-ascii.png)
+
+Walk back 3 meters away from your screen to watch for better view. [captcha2-ascii.xpm](captcha2-ascii.xpm)
+
+# "Bookshelf" effect #
+
+Slice multiple images and put the slices aside (960 is the max height, and 50 is the slice width)
+
+```
+convert $IMAGES -resize 'x960>' -gravity center -crop '50x+0+0!' +repage miff:- | 
+montage - -gravity center -geometry +5+5 -tile x1 bookshelf.png
+```
+
+[![Bookshelf example](bibli.tn.jpg)](bibli.jpg)
+
+With zsh, the 20 first files of current directory can be selected with this pattern: *(.[1,20])
+
+

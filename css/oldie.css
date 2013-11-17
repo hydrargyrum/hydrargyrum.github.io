@@ -1,0 +1,28 @@
+body {
+	font-family: DejaVu Sans Mono, Monaco, Inconsolata, Consolas, monospace, Courier New;
+	background-color: #6F00FF;
+}
+
+.content, .header, .footer {
+	background: white;
+	border: solid #7070bf;
+	border-width: 0em .3em;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.content {
+	padding: 1em 5em 2em 5em;
+	text-align: justify;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.footer {
+	text-align: center;
+	margin-top: 1em;
+}
+

@@ -1,0 +1,12 @@
+CF::Background = [ b -1 ]
+
+startshape mysquare(0)
+
+shape mysquare(natural p) {
+	SQUARE []
+	mysquare(p+1) [ x  .25 y  .25 s .5 b ( 1/2^p) ]
+	mysquare(p+1) [ x -.25 y -.25 s .5 b ( 1/2^p) ]
+	mysquare(p+1) [ x -.25 y  .25 s .5 b (-1/2^p) ]
+	mysquare(p+1) [ x  .25 y -.25 s .5 b (-1/2^p) ]
+}
+
