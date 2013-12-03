@@ -16,6 +16,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [hexgen](hexgen): generate data from an hex dump
 - [tailsleep](tailsleep): like tail -f but quits when I/O activity stops
 - [univisible](univisible): tweak Unicode combinations and visualize them
+- [json2sqlite](json2sqlite): insert JSON data in SQLite
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [iqontool](iqontool): pack multiple images into a .ico or .icns
 - [random-line](random-line): take a random line from stdin
