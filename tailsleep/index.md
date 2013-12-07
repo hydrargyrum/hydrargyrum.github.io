@@ -11,7 +11,9 @@ It's a sort of ``cat`` that continues to ``cat`` the file as the file is growing
 
 Extract a file that is being downloaded by a web browser:
 
-``tailsleep file-being-downloaded.tar.gz.part | tar -xzf -``
+```
+tailsleep file-being-downloaded.tar.gz.part | tar -xzf -
+```
 
 As an extension, download Flash videos loading/loaded in your web browser (doesn't need to be playing them, they can be paused):
 

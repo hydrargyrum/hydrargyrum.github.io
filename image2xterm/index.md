@@ -11,19 +11,25 @@ image2xterm is an "image2ascii" program that uses XTerm's 256 colors capability
 
 Display an image on a 256 colors capable terminal:
 
-``image2xterm rose.png``
+```
+image2xterm rose.png
+```
 
 ![rose](rose.png) -> ![xterm rose](xterm-1.png)
 
 Compensate the font characters not being square by applying a stretch factor (2):
 
-``image2xterm -s 2 rose.png``
+```
+image2xterm -s 2 rose.png
+```
 
 ![fixed xterm rose](xterm-2.png)
 
 Output to file:
 
-``image2xterm -s 2 -c 80 -r 40 rose.png > rose.xans``
+```
+image2xterm -s 2 -c 80 -r 40 rose.png > rose.xans
+```
 
 [rose.xans](rose.xans)
 

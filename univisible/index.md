@@ -1,5 +1,6 @@
 ---
 layout: mine
+title: univisible
 ---
 
 # univisible
@@ -14,7 +15,7 @@ Unicode has allows some of its codepoints to be combined together, for example a
 
 However, in this particular case, Unicode also has a third codepoint which combines the former two (LATIN SMALL LETTER E WITH ACUTE (U+00E9)). This means there are two ways to have an "é", the former being "decomposed", and the latter "composed".
 
-While these two ways are [equivalent https://en.wikipedia.org/wiki/Unicode_equivalence], they are not equal, which leads to redundancy, and a number of problems (complex string comparison for example), but this is out of scope here.
+While these two ways are [equivalent](https://en.wikipedia.org/wiki/Unicode_equivalence), they are not equal, which leads to redundancy, and a number of problems (complex string comparison for example), but this is out of scope here.
 
 To address the various possibilities, normalization was introduced, NFC/NFKC (which are normalized compositions) and NFD/NFKD (which are normalized decompositions).
 
@@ -67,19 +68,27 @@ The screenshot shows the graphical effect done by ``-v``:
 
 Decompose Unicode from stdin to stdout:
 
-``univisible -d``
+```
+univisible -d
+```
 
 Compose Unicode from a file ``foo.txt`` to stdout and convert UTF-8 to UTF-16:
 
-``univisible -c -f utf-8 -t utf-16 < foo.txt``
+```
+univisible -c -f utf-8 -t utf-16 < foo.txt
+```
 
 See if foo.txt's has compositions or decompositions:
 
-``univisible -v < foo.txt``
+```
+univisible -v < foo.txt
+```
 
 Show verbose info of each codepoint:
 
-``univisible -i < foo.txt``
+```
+univisible -i < foo.txt
+```
 
 ## Requirements & Misc ##
 

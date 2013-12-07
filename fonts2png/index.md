@@ -1,5 +1,6 @@
 ---
 layout: mine
+title: fonts2png
 ---
 
 # fonts2png
@@ -10,17 +11,23 @@ fonts2png is a program that previews font files to images files
 
 Default options (output to current directory):
 
-``fonts2png -d /fonts/dir/*``
+```
+fonts2png -d /fonts/dir/*
+```
 
 A few more options:
 
-``fonts2png -b white -c "#000000" -o /output/images/dir -s 30 -t "sample text" /fonts/dir/*``
+```
+fonts2png -b white -c "#000000" -o /output/images/dir -s 30 -t "sample text" /fonts/dir/*
+```
 
 Uses white background, black text, text "sample text", 30 points size.
 
 ## Example output ##
 
-``fonts2png -o /tmp -c gold -b black -s 12 /usr/share/fonts/truetype/ttf-atarismall/AtariSmall.ttf``
+```
+fonts2png -o /tmp -c gold -b black -s 12 /usr/share/fonts/truetype/ttf-atarismall/AtariSmall.ttf
+```
 
 Creates /tmp/[AtariSmall](http://gnu.ethz.ch/linuks.mine.nu/atari/).png:
 

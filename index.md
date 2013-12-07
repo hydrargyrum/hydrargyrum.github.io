@@ -7,7 +7,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 # Tools #
 
-- [fldev](fldev): expose partitions of a disk image in a virtual filesystem
+- [FLDev](fldev): expose partitions of a disk image in a virtual filesystem
 - [SIT-Tagger](sit-tagger): a simple image browser/viewer with tagging
 
 
