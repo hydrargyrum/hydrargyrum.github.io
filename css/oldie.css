@@ -1,18 +1,21 @@
 body {
 	font-family: DejaVu Sans Mono, Monaco, Inconsolata, Consolas, monospace, Courier New;
-	background-color: #6F00FF;
+	background-color: #000;
 }
 
+/* 64c8fe */
+/* a7e1f2 */
+/* 73C2FB */
+
 .content, .header, .footer {
-	background: white;
-	border: solid #7070bf;
+	color: #64c8fe; 
+	background: #000;
 	border-width: 0em .3em;
 	margin-left: 5%;
 	margin-right: 5%;
 }
 
 .content {
-	padding: 1em 5em 2em 5em;
 	text-align: justify;
 }
 
@@ -24,5 +27,33 @@ body {
 .footer {
 	text-align: center;
 	margin-top: 1em;
+}
+
+
+a {
+	color: #64c8fe;
+}
+
+a:visited {
+	font-style: italic;
+}
+
+h1 {
+	border: solid #64c8fe;
+	border-width: .1em;
+	margin: auto -3em;
+	padding: 0em 3em;
+	text-shadow: 0em 0em .75em #64c8fe;
+}
+
+h2 {
+	text-shadow: 0em 0em 2em #64c8fe;
+}
+
+pre {
+	border: dashed;
+	border-width: 0 0 0 .1em;
+	padding-left: .5em;
+	margin-left: .5em;
 }
 
