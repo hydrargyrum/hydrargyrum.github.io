@@ -8,9 +8,10 @@ body {
 /* 73C2FB */
 
 .content, .header, .footer {
-	color: #64c8fe; 
+	color: #64c8fe;
 	background: #000;
 	border-width: 0em .3em;
+
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -41,8 +42,12 @@ a:visited {
 h1 {
 	border: solid #64c8fe;
 	border-width: .1em;
-	margin: auto -3em;
-	padding: 0em 3em;
+
+	margin: 0% -3%;
+
+	padding-left: 3%;
+	padding-right: 3%;
+
 	text-shadow: 0em 0em .75em #64c8fe;
 }
 
