@@ -54,5 +54,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 # Articles #
 
 - [Unicode in filenames in OSes](misc/unicode-filenames.html)
-- [How to extract music from some video games](misc/extract-vg-music.html)
+- [Extract music from some video games](misc/extract-vg-music.html)
+- [Display Velib stations positions in OsmAnd](misc/velib-gpx-osmand.html)
+
 
