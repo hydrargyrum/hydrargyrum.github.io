@@ -32,3 +32,5 @@ gpsbabel -i garmin_poi -o gpx velib.poi.csv velib.poi.gpx
 ```
 
 So we get our [velib.poi.gpx](velib.poi.gpx) file. Importing GPX is not possible through the OsmAnd app, the file must be placed on the SD card manually instead, in the the `/osmand/tracks/` folder.
+
+![OsmAnd screenshot](velib-gpx.jpg)
