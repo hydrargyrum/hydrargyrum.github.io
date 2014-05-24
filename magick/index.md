@@ -1,5 +1,6 @@
 ---
 layout: mine
+title: ImageMagick stuff
 ---
 
 # ImageMagick stuff #
@@ -49,4 +50,12 @@ montage - -gravity center -geometry +5+5 -tile x1 bookshelf.png
 
 With zsh, the 20 first files of current directory can be selected with this pattern: *(.[1,20])
 
+# Chromatic aberration #
 
+Create a chromatic aberration on a photo by moving separately each color channel by a few pixels.
+
+```
+convert bananas.jpg -virtual-pixel edge -channel R -fx "p[-1,-2]" -channel B -fx "p[2,1]" bananas-artefact.jpg
+```
+
+![bananas](bananas.jpg) -> ![aberration](bananas-artefact.jpg)
