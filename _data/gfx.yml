@@ -1,0 +1,52 @@
+- name: Some CFDG pictures
+  description: "[Context-Free Design Grammar](http://www.contextfreeart.org/) is a program for building images with a set of context-free rules, in a source language."
+  pics:
+    - name: The Sierpinski [carpet](https://en.wikipedia.org/wiki/Sierpinski_carpet)
+      source: cfdg/carpet.cfdg
+      image: cfdg/carpet.png
+      thumb: cfdg/tn-carpet.png
+    - name: Black/White square
+      source: cfdg/sq3-2.cfdg
+      image: cfdg/sq3-2.png
+      thumb: cfdg/tn-sq3-2.png
+    - name: Hex YellOrange
+      source: cfdg/hex-yellorange.cfdg
+      image: cfdg/hex-yellorange.png
+      thumb: cfdg/tn-hex-yellorange.png
+    - name: Complete Graph 50
+      source: cfdg/complete-graph-2.cfdg
+      image: cfdg/complete-graph-2-1024.png
+      thumb: cfdg/tn-complete-graph-2-1024.png
+- name: A few others for CFDG 2
+  pics:
+    - image: cfdg/sq_2_1.png
+      thumb: cfdg/tn-sq_2_1.png
+    - image: cfdg/sq_4_1.png
+      thumb: cfdg/tn-sq_4_1.png
+    - image: cfdg/sq_4_-1.png
+      thumb: cfdg/tn-sq_4_-1.png
+    - image: cfdg/sq_5_1.png
+      thumb: cfdg/tn-sq_5_1.png
+    - image: cfdg/sq_11_s10.png
+      thumb: cfdg/tn-sq_11_s10.png
+    - image: cfdg/sq_16_s10.png
+      thumb: cfdg/tn-sq_16_s10.png
+- name: Tileable pixel patterns
+  description: Some have an alpha layer
+  pics:
+    - image: pattern/motif1.png
+      thumb: pattern/tile-motif1.png
+    - image: pattern/motif3.png
+      thumb: pattern/tile-motif3.png
+    - image: pattern/motif4-alpha.png
+      thumb: pattern/tile-motif4-alpha.png
+    - image: pattern/motif6.png
+      thumb: pattern/tile-motif6.png
+    - image: pattern/motif7.png
+      thumb: pattern/tile-motif7.png
+    - image: pattern/motif8.png
+      thumb: pattern/tile-motif8.png
+    - image: pattern/motif9.png
+      thumb: pattern/tile-motif9.png
+    - image: pattern/motif12-alpha1.png
+      thumb: pattern/tile-motif12-alpha1.png
