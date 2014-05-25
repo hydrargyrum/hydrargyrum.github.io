@@ -1,0 +1,36 @@
+#CF::Tile = [x .6 y (2*sqrt(.75*.3)) skew 60 0]
+
+CF::Background = [ b -1 ]
+startshape picture
+
+shape picture {
+	hexagon [ sat 1 b 1 h 40 ]
+	hexagon [ sat 1 b 1 h 0 r 30 x 1 ]
+	hexagon [ sat 1 b 1 h 20 r 35 x cos(60) y sin(60) ]
+	hexagon [ sat 1 b 1 h -20 r -35 x cos(-60) y sin(-60) ]
+	hexagon [ sat 1 b 1 h 30 r -35 x cos(120) y sin(120) ]
+	hexagon [ sat 1 b 1 h -40 r 30 x -1 ]
+	hexagon [ sat 1 b 1 h -30 r 35 x cos(-120) y sin(-120) ]
+}
+
+shape hexagon {
+	hexagon_path []
+	hexagon [ x (cos(0)) y (sin(0)) s .3 ]
+	hexagon [ x cos(60) y sin(60) s .3 ]
+	hexagon [ x cos(120) y sin(120) s .3 ]
+	hexagon [ x cos(180) y sin(180) s .3 ]
+	hexagon [ x cos(240) y sin(240) s .3 ]
+	hexagon [ x cos(300) y sin(300) s .3 ]
+	#hexagon [ s .3 ]
+}
+
+path hexagon_path {
+	MOVETO(cos(0), sin(0))
+	LINETO(cos(60), sin(60))
+	LINETO(cos(120), sin(120))
+	LINETO(cos(180), sin(180))
+	LINETO(cos(240), sin(240))
+	LINETO(cos(300), sin(300))
+	CLOSEPOLY()
+	STROKE() [ s .3 ]
+}

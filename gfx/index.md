@@ -17,6 +17,12 @@ layout: mine
 
 [![Black/White square thumbnail](cfdg/tn-sq3-2.png)](cfdg/sq3-2.png) [CFDG source](cfdg/sq3-2.cfdg)
 
+### Others ###
+
+| Complete graph | [![Complete Graph](cfdg/tn-complete-graph-2-1024.png)](cfdg/complete-graph-2-1024.png) | [CFDG source](cfdg/complete-graph-2.cfdg) |
+| Hex YellOrange | [![Hex YellOrange](cfdg/tn-hex-yellorange.png)](cfdg/hex-yellorange.png) | [CFDG source](cfdg/hex-yellorange.cfdg) |
+
+
 ### A few others for CFDG 2 ###
 
 [![SQ2](cfdg/tn-sq_2_1.png)](cfdg/sq_2_1.png) 

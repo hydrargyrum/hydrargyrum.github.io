@@ -1,15 +1,17 @@
-body {
-	font-family: DejaVu Sans Mono, Monaco, Inconsolata, Consolas, monospace, Courier New;
-	background-color: #000;
-}
-
 /* 64c8fe */
 /* a7e1f2 */
 /* 73C2FB */
 
-.content, .header, .footer {
+body {
+	font-family: DejaVu Sans Mono, Monaco, Inconsolata, Consolas, monospace, Courier New;
+	background-color: #000;
+	
 	color: #64c8fe;
-	background: #000;
+}
+
+.content, .header, .footer {
+	/*color: #64c8fe;
+	background: #000;*/
 	border-width: 0em .3em;
 
 	margin-left: 5%;
@@ -60,5 +62,12 @@ pre {
 	border-width: 0 0 0 .1em;
 	padding-left: .5em;
 	margin-left: .5em;
+}
+
+td {
+	border: solid #64c8fe;
+	border-width: .1em;
+	padding: .5em;
+
 }
 

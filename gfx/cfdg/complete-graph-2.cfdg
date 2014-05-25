@@ -1,0 +1,18 @@
+startshape cordes [ sat 1 b 1 ]
+CF::Background = [ b -1 ]
+
+N = 50
+
+shape cordes {
+	loop i = N [ h 30 ]
+		cordes_angle(i) []
+}
+
+path cordes_angle(number i) {
+	loop N [ r (360 / N) ] {
+		MOVETO(100, 0)
+		LINETO(cos(i * 360 / N) * 100, sin(i * 360 / N) * 100)
+		STROKE() []
+	}
+}
+
