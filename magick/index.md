@@ -16,7 +16,9 @@ convert tux.png -colorspace gray -fx 'u-p[-1,-1]+.5' tmp.mask.png
 convert other.png tmp.mask.png -gravity center -compose overlay -composite result.png
 ```
 
-![terminal](term.png) + ![Tux](tux.png) -> ![Mask](mask.png) -> ![Embossed Tux](tuxterm.png)
+![Tux](tux.png) -> ![Mask](mask.png)
+
+![terminal](term.png) + ![Mask](mask.png) -> ![Embossed Tux](tuxterm.png)
 
 # Read a CAPTCHA on console #
 

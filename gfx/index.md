@@ -26,7 +26,7 @@ layout: mine
 [![SQ11](cfdg/tn-sq_11_s10.png)](cfdg/sq_11_s10.png) 
 [![SQ16](cfdg/tn-sq_16_s10.png)](cfdg/sq_16_s10.png) 
 
-## Patterns ##
+## Tileable patterns ##
 
 [![](pattern/tile-motif1.png)](pattern/motif1.png) 
 [![](pattern/tile-motif3.png)](pattern/motif3.png) 
