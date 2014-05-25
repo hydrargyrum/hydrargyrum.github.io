@@ -1,3 +1,4 @@
 name: The Attic
 markdown: redcarpet
-pygments: true
+gems:
+  - jekyll-sitemap
