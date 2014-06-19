@@ -20,6 +20,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [iqontool](iqontool): pack multiple images into a .ico or .icns
 - [random-line](random-line): take a random line from stdin
+- [qunpak](qunpak): extract Quake I and II .pak files
 
 
 # Tiny graphical helpers #
