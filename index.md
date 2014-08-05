@@ -21,6 +21,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [iqontool](iqontool): pack multiple images into a .ico or .icns
 - [random-line](random-line): take a random line from stdin
 - [qunpak](qunpak): extract Quake I and II .pak files
+- [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 
 
 # Tiny graphical helpers #
