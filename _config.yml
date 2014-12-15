@@ -1,4 +1,6 @@
 name: The Attic
 markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 gems:
   - jekyll-sitemap
