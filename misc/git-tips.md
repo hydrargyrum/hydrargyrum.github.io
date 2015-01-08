@@ -117,9 +117,9 @@ git-rebase -i origin/branch
 # encoding: utf-8
 
 set -e
-git commit -m "squash! with ↑ (previous): removing $1"
-git revert --no-edit HEAD
-git commit --amend -m "should reword: adding $1"
+git commit --squash=HEAD
+git revert --no-commit HEAD
+git commit -m "should reword: adding `git log --oneline -1 HEAD~1`"
 ```
 
-The use of a message starting with "squash!" will make the rebase-todo file contain a squash when you use "`git rebase -i --autosquash HEAD~3`".
+Setting `--squash` will create a commit message starting with the string "squash!", [and a commit message starting with "squash!" will make the rebase-todo file contain a squash instead of the default pickup action](https://coderwall.com/p/hh-4ea/git-rebase-autosquash), when you use "`git rebase -i --autosquash HEAD~3`".
