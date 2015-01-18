@@ -97,3 +97,51 @@ A few other patterns:
 * HORIZONTAL2-HORIZONTAL
 
 ![Hatched text](hatched-4.png)
+
+# Animation illusion with a scrolling shutter #
+
+It's possible to make an optical illusion of animating an object by just moving a shutter over a static image. Here's a sample of such an animation.
+
+<div style="background: url(scanimation/scanimation.png) fixed content-box; height: 300px; width: 282px; overflow: auto;">
+	<div style="background: url(scanimation/scanimation-mask.png) content-box; height: 282px; width: 2800px;">
+		&nbsp;
+	</div>
+</div>
+
+It first consists of a weird image:
+
+![Base scanimation](scanimation/scanimation.png)
+
+and a shutter that is scrolled over the weird image:
+
+![Base shutter](scanimation/scanimation-mask-big.png)
+
+What is this weird image? It is the superposition of each animation frame, where each frame has first been sliced to show only the portions that the shutter should allow to show.
+
+We started from this gif:
+
+![Base scanimation gif](scanimation/rotating.gif)
+
+![Frame 0](scanimation/seq-0.png) ![Frame 1](scanimation/seq-1.png) ![Frame 2](scanimation/seq-2.png) ![Frame 3](scanimation/seq-3.png) ![Frame 4](scanimation/seq-4.png) ![Frame 5](scanimation/seq-5.png)
+
+which contains 6 animation frames. To be able to do the superposition, we will not show the same portion of pixels for any two frames (that's the shutter trick!).
+The shutter shows columns of one-pixel width at a time, corresponding to one frame, so we should not consider the hide the remaining 5 frames, the 5 remaining 5 pixels column.
+
+Here's what we take from the first frame:
+
+For the second frame, we should just shift the mask a little, and so on, finally we superpose all parts.
+
+```
+convert seq.gif -coalesce seq-%d.png
+NFRAMES=$(ls seq-*.png | wc -l)
+DIM=$(identify -format %Wx%H seq-0.png)
+
+convert -size 1x1 xc:none -size $((NFRAMES-1))x1 xc:black +append mask.png
+
+for i in `seq 0 $((NFRAMES-1))`
+do
+	convert -size $DIM -tile-offset +$i+0 tile:mask.png -transparent black seq-$i.png -compose in -composite miff:-
+done | convert - -flatten out.png
+```
+
+![Base scanimation](scanimation/scanimation.png)
