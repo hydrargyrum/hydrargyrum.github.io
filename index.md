@@ -46,6 +46,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qorbeille](https://github.com/hydrargyrum/qorbeille): a Qt library to trash files to recycle bin
 - [qvariantjson](https://github.com/hydrargyrum/qvariantjson): yet another Qt4 JSON library
 - [C++ ASCII tree](cppasciitree): an example of how to hardcode a tree with source code looking like the actual tree
+- a patch for upgrading [pycairo to cairo 0.12](py2cairo)
 
 
 # Various plugins #
