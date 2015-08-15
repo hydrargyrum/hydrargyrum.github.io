@@ -14,27 +14,29 @@
 {% for group in site.data.gfx %}
 	<h2>{{ group.name | markdownify }}</h2>
 	{% if group.description %}<p>{{ group.description | markdownify }}</p>{% endif %}
-	{% if group.pics.first.name %}
+	{% if group.pics.first.name or group.pics.first.source %}
 	<table>
+		{% if group.pics.first.name %}
 	<tr>
-	{% for pic in group.pics %}
+			{% for pic in group.pics %}
 		<td>{{ pic.name | markdownify }}</td>
-	{% endfor %}
+			{% endfor %}
 	</tr>
+		{% endif %}
 	<tr>
-	{% for pic in group.pics %}
+		{% for pic in group.pics %}
 	<td><a href="{{ pic.image }}"><img src="{{ pic.thumb }}" alt="{{ pic.name }}" /></a></td>
-	{% endfor %}
+		{% endfor %}
 	</tr>
-	{% if group.pics.first.source %}
+		{% if group.pics.first.source %}
 	<tr>
-	{% for pic in group.pics %}
+			{% for pic in group.pics %}
 	<td>
 	<a href="{{ pic.source }}">Source</a>
 	</td>
-	{% endfor %}
+			{% endfor %}
 	</tr>
-	{% endif %}
+		{% endif %}
 	</table>
 	{% else %}
 	{% for pic in group.pics %}

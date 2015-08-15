@@ -50,3 +50,13 @@
       thumb: pattern/tile-motif9.png
     - image: pattern/motif12-alpha1.png
       thumb: pattern/tile-motif12-alpha1.png
+- name: Scripted images
+  pics:
+    - name: NYC lights
+      image: magick/nylights.png
+      source: magick/nylights.sh
+      thumb: magick/tn-nylights.png
+    - name: ""
+      image: magick/bw-1.png
+      source: magick/bw-1.sh
+      thumb: magick/tn-bw-1.png
