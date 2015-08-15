@@ -23,6 +23,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qunpak](qunpak): extract Quake I and II .pak files
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
+- [timecalc](timecalc): calculator of dates and durations
 
 
 # Tiny graphical helpers #
