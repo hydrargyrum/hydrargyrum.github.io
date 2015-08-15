@@ -71,3 +71,15 @@ You could just rebase to rewing to the base state, add again the functions but w
 But with this new technique, you can easily continue after the feature commit, to replace the feature with dummy code, and create a dummy commit. What you have then is "base -> new feature -> dummy feature", you just have to swap the commits, using the technique we have seen. Just don't put the dummy commit at the end of the rebase serie, so there should be only two commits to squash instead of three.
 
 ![moving a dummy commit](git-dummy.png)
+
+Changing
+
+	pickup 1111111 feature
+	pickup 2222222 dummy
+
+Into
+
+	pickup 1111111 feature
+	squash 2222222 dummy
+	exec git-revert 2222222
+	squash 1111111 feature
