@@ -3,123 +3,71 @@ layout: mine
 title: git tips
 ---
 
-# Splitting a commit and copyedit it
-
-When splitting a git commit in two parts, you may want to edit the first commit to fix some things.
+# Solving some conflicts when swapping two commits
 
 Warning: this technique relies on [git-rebase(1)](https://www.kernel.org/pub/software/scm/git/docs/git-rebase.html) knowledge, don't try to use it if you don't know it before.
 
-## Use case
+## Swapping
 
-For example, suppose you have done a commit (on HEAD) consisting of this in foo.c:
+Suppose these are the last 2 commits:
 
-```
-@@ -1 +1,5 @@
- /* stuff */
-+
-+int f() {
-+       return 42;
-+}
-```
+	1111111 foo
+	2222222 bar
 
-And you would like to have instead 2 commits, the first with (state S1):
+And you want to swap them to get this:
 
-```
-@@ -1 +1,6 @@
- /* stuff */
-+
-+int f() {
-+       /* TODO implement this function */
-+       return -1;
-+}
-```
+	2222222 bar
+	1111111 foo
 
-And the second with (state S2):
+Note: Of course, the SHA-1 ids of commits won't be swapped, because git computes the id based on the parents, but we're using the same ids here to express the logical content of the commits.
 
-```
-@@ -1,6 +1,5 @@
- /* stuff */
- 
- int f() {
--       /* TODO implement this function */
--       return -1;
-+       return 42;
- }
-```
+We can use git-rebase to swap them.
 
-## How not to do it?
+	git-rebase -i HEAD~2
 
-The simplest way would be to backup foo.c's real implementation (as it is in state S2), then edit foo.c to have the dummy implementation (state S1) and do a "`git commit --amend`" to fix the original commit, and after this restore the foo.c backup and finally create a second commit, but we want a somehow more satisfying solution.
+This will pop an editor, where we see:
 
-Alternatively, you could unstage the "`return 42`" line thanks to "`git reset -p`", and then "`git commit --amend`" the first commit, so this line is not present, and create the second commit with the line "`return 42`".
-But then you would not have the "`return -1`" in the first commit. You could do a "`git rebase -i HEAD~2`" to edit the first commit and insert the dummy implementation, but `git rebase` would encounter a conflict because the second patch did not expect a "`return -1`" to be present.
+	pickup 1111111 foo
+	pickup 2222222 bar
 
-You could also have 2 commits, one that first applies S2, then the other which makes S1, and then directly swap the commits using "`git rebase -i HEAD~2`" but that would also cause conflicts. However, we're getting nearer to a better solution.
+Simply swap the lines, save and quit.
 
-## How to do it without conflicts?
+## In case of conflict
 
-To do this, we will first need to edit foo.c, that we have currently in state S2, to get the state S1 (do "S2 -> S1"). Then commit it:
+If the rebase fails when applying "2222222 bar" to the base, we have to solve the conflicts by hand. However, if it fails when applying "1111111 foo", we can solve this in a no-brainer way. First, do a `git-rebase --abort`.
 
-```
-git add foo.c
-git commit -m "S2 -> S1"
-```
+In the git-rebase's todo list, copy "2222222 bar" at the beginning, add a "`exec git-revert HEAD`" after this, and set the last "foo" and "bar" to "squash" mode. If you're afraid, don't put them in squash mode, you can do it later. You should have:
 
-Here, the trick is to `git-revert` the last commit, to have the inverse transition, S1 -> S2:
+	pickup 2222222 bar
+	exec git-revert --no-edit HEAD
+	squash 1111111 foo
+	squash 2222222 bar
 
-```
-git revert --no-edit HEAD
-```
+git will try to squash 3 commits together and ask you to edit the final commit message, only keep the "foo" part.
 
-At this point, we have 3 commits, in chronological order:
+## Why this works
 
-  * S0->S2
-  * S2->S1
-  * S1->S2
+If you think in "states", you will better understand how this solves the problem.
 
-And we want:
+Having "foo" then "bar" is going from state S0 (base HEAD) to S1 (previous + "foo" modifications) to S2 (previous + "foo" modifications + "bar" modifications): S0 -> S1 -> S2.
+This can be seen in the following image, where the base commit is white color, and each transition can be seen as adding a new color to the previous color.
 
-  * S0->S1
-  * S1->S2
+When naively reordering "bar" then "foo", we still start from state S0 (no modifications) and still get at the end S2 (both "foo" and "bar" modifications), but using an intermediate state S1' (base + "bar" modifications), and in our case, git fails to the transition S1' -> S2 because it's not trivial.
 
-Now, we have smooth transitions, so `git-rebase` won't make any conflict. We can use "`git rebase -i HEAD~3`" to fuse the first 2 commits together, and possibly edit the commit messages to reflect our changes.
+That's where we should help git a little, by giving it smoother transitions. We know that git can do S0 -> S1 and S1 -> S2. In our case, we saw that, luckily, S0 -> S1' did work too. Additionally, one of git's rules is that it can always make the reverse of a transition without effort, like S1' -> S0.
 
-The rebase todo file should be edited to look like this:
+Therefore, the sequence "S0 -> S1' -> S0 -> S1 -> S2" will work smoothly enough. Once this sequence is built, we can just squash the 3 last transitions in one commit, to finally get S0 -> S1' -> S2.
 
-```
-pick ID1 Implement f
-squash ID2 S2 -> S1
-reword ID3 Revert "S2 -> S1"
-```
+![solving some conflicts when swap 2 commits](git-swap.png)
 
-## In a rebase
+## Use cases
 
-This technique can also be used to split a commit properly in the middle of another rebase. However, the rebase we do in this technique can't be applied while a rebase is in progress. You will only do the rebase after everything:
+Maybe you already have use cases, but this facilitates some "workflows".
 
-```
-git-rebase -i origin/branch
-# put some middle commit in "edit" state
-# enters our technique
-# edit the files
-git-add the files
-git-commit
-git-revert HEAD
-# finish the current rebase
-git-rebase --continue # applies without conflict
-# now we can finish our technique, doing another rebase
-git-rebase -i origin/branch
-```
+For example, if you commited a new feature that implies adding new functions, but realized too late that it would have been nice if you made an intermediate commit, that adds the new functions but as a skeleton implementation, with dummy code, before the commit that does the real job.
 
-## A helper script
+You could just rebase to rewing to the base state, add again the functions but with dummy code, create a new commit at this point, and continue the rebase so the functions are filled by the "feature" commit. Unfortunately, git would fail, as the context to which the "feature" commit was applied to has completely changed, and make conflicts here that you would have to solve manually, but this is tedious.
 
-```
-#!/bin/sh
-# encoding: utf-8
+But with this new technique, you can easily continue after the feature commit, to replace the feature with dummy code, and create a dummy commit. What you have then is "base -> new feature -> dummy feature", you just have to swap the commits, using the technique we have seen. Just don't put the dummy commit at the end of the rebase serie, so there should be only two commits to squash instead of three.
 
-set -e
-git commit --squash=HEAD
-git revert --no-commit HEAD
-git commit -m "should reword: adding `git log --oneline -1 HEAD~1`"
-```
-
-Setting `--squash` will create a commit message starting with the string "squash!", [and a commit message starting with "squash!" will make the rebase-todo file contain a squash instead of the default pickup action](https://coderwall.com/p/hh-4ea/git-rebase-autosquash), when you use "`git rebase -i --autosquash HEAD~3`".
+![moving a dummy commit](git-dummy.png)
