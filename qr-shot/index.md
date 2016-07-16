@@ -18,7 +18,7 @@ You can also use it to generate a QR Code image file based on your text input.
 
 ## Requirements & Misc ##
 
-qr-shot requires PyQt4 (or PySide) and python-zbar (to decode) and/or python-qrencode (to encode).
+qr-shot requires PyQt5 and python-zbar (to decode) and/or python-qrencode (to encode).
 qr-shot is licensed under the [WTFPLv2](../wtfpl).
 
 ## Download ##
