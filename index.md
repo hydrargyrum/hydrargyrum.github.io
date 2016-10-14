@@ -45,6 +45,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 # Libraries #
 
+- [vignette](https://github.com/hydrargyrum/vignette): a Python library for generating thumbnails following the FreeDesktop specification [[documentation](https://vignette.readthedocs.io)]
 - [qorbeille](https://github.com/hydrargyrum/qorbeille): a Qt library to trash files to recycle bin
 - [qvariantjson](https://github.com/hydrargyrum/qvariantjson): yet another Qt4 JSON library
 - [C++ ASCII tree](cppasciitree): an example of how to hardcode a tree with source code looking like the actual tree
