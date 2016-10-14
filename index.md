@@ -24,6 +24,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
 - [timecalc](timecalc): calculator of dates and durations
+- [morse](morse): text from/to Morse code converter, and optional beep player
 
 
 # Tiny graphical helpers #
