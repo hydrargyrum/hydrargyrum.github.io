@@ -23,8 +23,14 @@ HELLO WORLD
 If the [`beep` command](http://johnath.com/beep/) is available, ``morse`` can use it to play the Morse beeps using the PC speaker:
 
 ```
-% echo hello world | morse --play
+% echo hello world | morse --beep
 [speaker beeps]
+```
+
+Otherwise, a [wave output](output.wav) can be generated, with optional frequency:
+
+```
+% echo hello world | morse --wave output.wav --frequency 700
 ```
 
 # Download #
