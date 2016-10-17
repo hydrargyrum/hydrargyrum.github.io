@@ -53,6 +53,16 @@ h1 {
 	text-shadow: 0em 0em .75em #64c8fe;
 }
 
+h1:hover::after {
+	content: "\002588";
+	font-size: 90%;
+	animation: 1s infinite blinking step-start;
+}
+
+@keyframes blinking {
+	50% { opacity: 0; }
+}
+
 h2 {
 	text-shadow: 0em 0em 2em #64c8fe;
 }
