@@ -12,26 +12,30 @@ image2xterm is an "image2ascii" program that uses XTerm's 256 colors capability
 Display an image on a 256 colors capable terminal:
 
 ```
-image2xterm rose.png
+image2xterm eggs.jpg
 ```
 
-![rose](rose.png) -> ![xterm rose](xterm-1.png)
+![eggs](eggs.jpg) -> ![xterm eggs](hd.png)
 
-Compensate the font characters not being square by applying a stretch factor (2):
+Unicode block characters are used to have colored squares.
+
+If Unicode cannot be used, simple spaces can be used with `--spaces`.
+Since font characters are usually higher than wide, one character is interpreted as its height being twice the width.
 
 ```
-image2xterm -s 2 rose.png
+image2xterm --spaces eggs.jpg
 ```
 
-![fixed xterm rose](xterm-2.png)
+![spaces xterm eggs](stretch.png)
 
 Output to file:
 
 ```
-image2xterm -s 2 -c 80 -r 40 rose.png > rose.xans
+image2xterm -c 80 -r 24 eggs.jpg > eggs.xans
+cat eggs.xans
 ```
 
-[rose.xans](rose.xans)
+[eggs.xans](eggs.xans)
 
 ## Requirements & Misc ##
 
