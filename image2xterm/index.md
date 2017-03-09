@@ -5,17 +5,25 @@ title: image2xterm
 
 # image2xterm
 
-image2xterm is an "image2ascii" program that uses XTerm's 256 colors capability
+image2xterm is an "image2ascii" program that uses terminal RGB24 mode or 256 colors
 
 ## Usage ##
 
-Display an image on a 256 colors capable terminal:
+Display an image on a 256-colors capable terminal:
 
 ```
 image2xterm eggs.jpg
 ```
 
 ![eggs](eggs.jpg) -> ![xterm eggs](hd.png)
+
+Some terminals support 24-bits colors, giving even better rendition, use `--truecolor` for it:
+
+```
+image2xterm --truecolor eggs.jpg
+```
+
+![xterm eggs with 24-bits colors](hdrgb.png)
 
 Unicode block characters are used to have colored squares.
 

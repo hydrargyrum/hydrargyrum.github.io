@@ -37,7 +37,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 # Fun with graphics #
 
 - [ImageMagick stuff](magick): (including "how to read a CAPTCHA on console with ImageMagick")
-- [image2xterm](image2xterm): display an image on console using "XTerm's 256 ANSI colors"
+- [image2xterm](image2xterm): display an image on console using terminal RGB24 mode or 256 colors
 - [fonts2png](fonts2png): render TTF fonts samples to image files
 - [qr2unicode](qr2unicode): display QR-codes on console using Unicode box-drawing characters
 - [Some images](gfx)
