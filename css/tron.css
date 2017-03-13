@@ -41,6 +41,15 @@ a:visited {
 	font-style: italic;
 }
 
+@keyframes flashing {
+	0% { border: solid black; }
+	20% { border: solid #64c8fe; }
+	30% { border: solid black; }
+	50% { border: solid #64c8fe; }
+	60% { border: solid black; }
+	100% { border: solid #64c8fe; }
+}
+
 h1 {
 	border: solid #64c8fe;
 	border-width: .1em;
@@ -51,6 +60,10 @@ h1 {
 	padding-right: 3%;
 
 	text-shadow: 0em 0em .75em #64c8fe;
+}
+
+h1:hover {
+	animation: 0.5s step-start flashing;
 }
 
 h1:hover::after {
