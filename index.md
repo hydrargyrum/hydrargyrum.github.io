@@ -16,7 +16,6 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [hexgen](hexgen): generate data from an hex dump
 - [tailsleep](tailsleep): like tail -f but quits when I/O activity stops
 - [univisible](univisible): tweak Unicode combinations and visualize them
-- [json2sqlite](json2sqlite): insert JSON data in SQLite
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [iqontool](iqontool): pack multiple images into a .ico or .icns
 - [random-line](random-line): take a random line from stdin
@@ -29,7 +28,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 ## JSON helpers ##
 
-- [nested-jq](nested-jq): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
+- [json2sqlite](jsontools/json2sqlite.html): insert JSON data in SQLite
+- [nested-jq](jsontools/nested-jq.html): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
 - [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
 - [json2csv](jsontools/json2csv.html): convert JSON data (a list of objects) to CSV
 
