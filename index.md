@@ -25,7 +25,13 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
 - [timecalc](timecalc): calculator of dates and durations
 - [morse](morse): text from/to Morse code converter, and optional beep player
+
+
+## JSON helpers ##
+
 - [nested-jq](nested-jq): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
+- [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
+- [json2csv](jsontools/json2csv.html): convert JSON data (a list of objects) to CSV
 
 
 # Tiny graphical helpers #
