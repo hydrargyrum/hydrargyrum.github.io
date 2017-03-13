@@ -92,7 +92,7 @@ univisible -i < foo.txt
 
 ## Requirements & Misc ##
 
-univisible requires Python 2, but can be easily ported to Python 3, I just don't use Python 3 yet.
+univisible requires Python 3.
 
 ## Download ##
 

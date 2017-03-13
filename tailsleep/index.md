@@ -26,6 +26,6 @@ done
 
 # Misc & download #
 
-tailsleep requires Python 2 and is licensed under the [WTFPLv2](../wtfpl).
+tailsleep requires Python 3 and is licensed under the [WTFPLv2](../wtfpl).
 
 [Project repository](https://github.com/hydrargyrum/attic/tree/master/tailsleep)
