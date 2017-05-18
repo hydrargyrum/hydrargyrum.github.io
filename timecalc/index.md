@@ -20,4 +20,6 @@ Expressions can be given either on the command-line or in a Read-Eval-Print-Loop
 
 [Project repository](https://github.com/hydrargyrum/timecalc)
 
-timecalc uses Python 2 and is licensed under the [WTFPLv2](../wtfpl).
+timecalc uses Python 3 and is licensed under the [WTFPLv2](../wtfpl).
+
+It depends optionally on [dateutil](https://labix.org/python-dateutil).
