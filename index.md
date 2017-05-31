@@ -28,6 +28,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 ## JSON helpers ##
 
+- [pjy](https://github.com/hydrargyrum/pjy/blob/master/README.rst): process JSON data like [jq](https://stedolan.github.io/jq/), but with a standard Python syntax
 - [json2sqlite](jsontools/json2sqlite.html): insert JSON data in SQLite
 - [nested-jq](jsontools/nested-jq.html): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
 - [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
