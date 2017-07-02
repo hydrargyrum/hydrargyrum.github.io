@@ -74,3 +74,4 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [Display Velib stations positions in OsmAnd](misc/velib-gpx-osmand.html)
 - [Variables and quoting in shell](misc/shell-quoting.html)
 - [git tips](misc/git-tips.html)
+- [quickref for Semantic Versioning](misc/semver.html)
