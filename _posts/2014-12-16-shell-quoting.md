@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: Variables and quoting in shell
+tags: shell
 ---
 
 # Quoting vars with spaces in shell

@@ -4,3 +4,8 @@ redcarpet:
   extensions: ["tables"]
 gems:
   - jekyll-sitemap
+permalink: /posts/:categories/:year-:month-:day-:title.html
+collections:
+  posts_data:
+    output: true
+    permalink: /posts/:path

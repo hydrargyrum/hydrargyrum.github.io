@@ -1,5 +1,7 @@
 ---
 layout: mine
+title: Filenames and Unicode in various OSes
+tags: unicode
 ---
 
 ## A brief reminder about Unicode and encodings ##

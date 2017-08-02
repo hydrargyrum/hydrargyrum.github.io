@@ -1,5 +1,7 @@
 ---
 layout: mine
+title: Extract music from some video games
+tags: file_formats
 ---
 
 # Extract music from some video games #
