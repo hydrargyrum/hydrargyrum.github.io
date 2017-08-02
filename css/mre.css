@@ -1,0 +1,39 @@
+body {
+	font-family: DejaVu Sans, Sans Serif, sans;
+}
+
+h1 {
+	border: 0.1em solid black;
+	background: #f6591d;
+	color: white;
+
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.title {
+	text-align: center;
+}
+
+a:active, a:link {
+	color: black;
+}
+
+a:visited {
+	color: #999;
+}
+
+.title a {
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0.5em;
+}
+
+li::before {
+	content: "▢";
+	color: #f6591d;
+	padding-right: 0.5em;
+}
