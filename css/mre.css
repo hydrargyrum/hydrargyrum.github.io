@@ -41,3 +41,7 @@ li::before {
 .post-date {
 	color: #999;
 }
+
+p code {
+	background: #eee;
+}
