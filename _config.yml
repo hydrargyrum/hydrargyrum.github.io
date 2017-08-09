@@ -4,6 +4,7 @@ redcarpet:
   extensions: ["tables"]
 gems:
   - jekyll-sitemap
+  - jekyll-feed
 permalink: /posts/:categories/:year-:month-:day-:title.html
 collections:
   posts_data:
