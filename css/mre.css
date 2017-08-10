@@ -42,6 +42,14 @@ li::before {
 	color: #999;
 }
 
-p code {
+p code, li code {
 	background: #eee;
+}
+
+pre {
+	padding-left: 2em;
+}
+
+table, td {
+	border: 1px solid black;
 }
