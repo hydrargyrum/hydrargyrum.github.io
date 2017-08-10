@@ -194,8 +194,8 @@ This behavior does not follow the rules of quoting we've previously seen, this i
 
 | shell syntax | real arguments passed |
 |----|----|
-| before $var after | before/foo/bar/after |
-| before "$var" after | before/foo bar/after |
-| "before $var after" | before foo bar after |
-| before" $var "after | before foo bar after |
-| before" "$var" "after | before foo/bar after |
+| `before $var after` | 4 args: `before` / `foo` / `bar` / `after` |
+| `before "$var" after` | 3 args: `before` / `foo bar` / `after` |
+| `"before $var after"` | 1 arg: `before foo bar after` |
+| `before" $var "after` | 1 arg: `before foo bar after` |
+| `before" "$var" "after` | 2 args: `before foo` / `bar after` |
