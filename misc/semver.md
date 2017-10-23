@@ -17,11 +17,10 @@ This is a short reference of [Semantic Versioning](http://semver.org/).
   * only digits, no leading zeroes
 
 Core of semantic versioning:
-* X : Major version : for incompatible changes to "public API"
-* Y : Minor version : for backward-compatible new features to "public API"
-* Z : Patch version : for backward-compatible bugfixes (nothing in public API)
-
-  * Major version 0 does not need to respect those rules
+  * X: Major version: for incompatible changes to "public API"
+  * Y: Minor version: for backward-compatible new features to "public API"
+  * Z: Patch version: for backward-compatible bugfixes (nothing in public API)
+  * _Exception_: Major version 0 does not need to respect those rules
 
 Ordering
   * compare numerically: 1.1.0 < 1.9.0 < 1.10.0
@@ -49,7 +48,7 @@ Ordering
   * if only one is a number, it is inferior: 1.1.1-42 < 1.1.1-aa
   * less components is inferior: 1.1.1-2 < 1.1.1-2.3
 
- Build metadata                                                                           
+ Build metadata
 ================
 
   Examples: 1.23.4-alpha+foo, 1.23.4+foo
