@@ -32,7 +32,7 @@ Each operating systems has its set of rules for its APIs and filesystem support 
 
 On Unix and MacOSX, null characters and slashes are forbidden in a filename. MacOSX Finder will display ":" as a "/" though.
 
-On Windows, null characters are forbidden, plus theses ones: slash (/), colon (:), backslash (\),  pipe (|), star (*), question mark (?), double quote ("), angle brackets (<>), tabs and carriage returns and line feeds. Additionnaly, a few names are reserved, like "con" or "nul" ("nul" is a sort of equivalent to /dev/null).
+On Windows, null characters are forbidden, plus theses ones: slash (`/`), colon (`:`), backslash (`\`),  pipe (`|`), star (`*`), question mark (`?`), double quote (`"`), angle brackets (`<>`), tabs and carriage returns and line feeds. Additionnaly, a few names are reserved, like "con" or "nul" ("nul" is a sort of equivalent to /dev/null).
 
 Also, on Windows, file names should not end with a space or a dot (.). While it is possible to create them with some means (see below), many API functions will not be able to manipulate them, and in particular the Windows explorer cannot manipulate them, not even remove them.
 
