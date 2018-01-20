@@ -1,0 +1,30 @@
+digraph G {
+	graph [
+		rankdir = "LR"
+	]
+
+	global [
+		label = "<s> Global scope | a | b | f | <e>"
+		shape = "record"
+	]
+
+	f [
+		label = "<s> f scope | a | c | i | g | <e>"
+		shape = "record"
+	]
+
+	g [
+		label = "<s> g scope | c | <e>"
+		shape = "record"
+	]
+
+	l [
+		label = "<s> list-comp scope | j | <e>"
+		shape = "record"
+	]
+
+	l:e -> g:s
+	g:e -> f:s
+	f:e -> global:s
+}
+
