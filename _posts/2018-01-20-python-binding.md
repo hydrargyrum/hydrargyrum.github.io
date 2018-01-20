@@ -91,7 +91,7 @@ def f(a, c):
 		# b and f are bound in the grand-parent scope
 ```
 
-In Python 3, the scopes of this example would look like that :
+In Python 3, the scopes of this example would look like that:
 
 ![Example binding scopes](python-scopes.png)
 
@@ -112,6 +112,26 @@ class A(object):
 
 	class C(object):
 		print(b) # will also raise a NameError
+```
+
+# Unbinding with `del`
+
+Though not documented extensively, the `del` statement unbinds a variable from the local scope.
+
+However, it does not remove it from the local scope, it is still present but marked as deleted.
+Accessing the name afterwards will not cause a lookup in the parent scope but a `NameError` instead:
+
+```
+a = 1
+
+def f():
+	a = 2
+	print(a) # prints 2
+	del a
+	print(a) # raises a NameError
+
+f()
+print(a) # prints 1
 ```
 
 # A common gotcha
