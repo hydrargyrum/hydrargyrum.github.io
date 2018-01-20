@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: Variables and quoting in shell
-tags: shell
+tags: shell posix
 ---
 
 # Quoting vars with spaces in shell
@@ -199,3 +199,7 @@ This behavior does not follow the rules of quoting we've previously seen, this i
 | `"before $var after"` | 1 arg: `before foo bar after` |
 | `before" $var "after` | 1 arg: `before foo bar after` |
 | `before" "$var" "after` | 2 args: `before foo` / `bar after` |
+
+# Reference
+
+* [POSIX:2008, shell command language](http://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html)
