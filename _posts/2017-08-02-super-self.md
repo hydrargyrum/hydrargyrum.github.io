@@ -50,21 +50,60 @@ For each class, Python sets its [Method Resolution Order](https://www.python.org
 It contains each class of the inheritance graph exactly once, even if it appears multiple times in the graph, the most common being the `object` class, which is at the top.
 The `object` class is always the last class in the MRO (except if some classes don't inherit `object`!).
 
+Let's define a few classes (with diamond inheritance):
+
 ```
-class A(object): pass
-class B(object): pass
+class T(object): pass
+class A(T): pass
+class B(T): pass
 class C(A, B): pass
 ```
 
 The MRO of a class can be fetched with the class-method [`mro()`](https://docs.python.org/2/library/stdtypes.html#class.mro).
 
 ```
-C.mro()  # [__main__.C, __main__.A, __main__.B, object]
+C.mro()  # [__main__.C, __main__.A, __main__.B, __main__.T, object]
+B.mro()  # [__main__.B, __main__.T, object]
+A.mro()  # [__main__.A, __main__.T, object]
 ```
+
+## Why use `super()`?
+
+Without `super()`, we would have to call the parent class manually:
+
+```
+class T(object):
+    def __init__(self):
+        print('T')
+
+class A(T):
+    def __init__(self):
+        T.__init__(self)
+        print('A')
+
+class B(object):
+    def __init__(self):
+        T.__init__(self)
+        print('B')
+
+class C(A, B):
+    def __init__(self):
+        A.__init__(self)
+        B.__init__(self)
+        print('C')
+```
+
+`C` would call both `A` and `B`, and each in turn would call `T`, because they wouldn't know about each other.
 
 ## `super()`
 
-The MRO also defines which class the `super` function will return. It looks the MRO of the object class, finds the given "current class" in the MRO, takes the next class in the MRO, and then does some stuff to wrap the object instance with the super class found.
+As we've just seen, `A` and `B` are independant so their parent might be called twice, when called manually.
+However, the MRO of a class have an uniqued, ordered list of ancestors, which is good thing to prevent a class being called twice.
+
+And this is what `super` uses. It looks the MRO of the object class, finds the given "current class" in the MRO, takes the next class in the MRO, and then does some stuff to wrap the object instance with the super class found.
+
+We've seen that only considering the "parent class of the current class" is not a good thing, we need to consider the whole hierarchy (thanks to the MRO).
+That's why the `super` functions takes a `self` argument, to have the class hierarchy of the object.
 
 Here's a naive implementation of the lookup:
 
@@ -73,6 +112,39 @@ def super_class_lookup(current_class, instance):
     mro = type(instance).mro()
     idx = mro.index(current_class)
     return mro[idx + 1]
+```
+
+```
+super_class_lookup(C, C()) # __main__.A
+super_class_lookup(A, C()) # __main__.B
+super_class_lookup(B, C()) # __main__.T
+```
+
+```
+super_class_lookup(A, A()) # __main__.T
+super_class_lookup(B, B()) # __main__.T
+```
+
+A `super`-naive implementation:
+
+```
+class super(object):
+    def __init__(self, current_class, instance):
+        self.__instance = instance
+        self.__class = super_class_lookup(current_class, instance)
+
+    def __getattribute__(self, attr):
+        if attr.startswith('_super__'):
+            return object.__getattribute__(self, attr)
+
+        value = getattr(self.__class, attr)
+        if not callable(value):
+            return value
+
+        # doesn't account for staticmethod, classmethod, properties, etc.
+        def method(*args, **kwargs):
+            return value(self.__instance, *args, **kwargs)
+        return method
 ```
 
 ## Why do you need to inherit `object` when using `super`?
