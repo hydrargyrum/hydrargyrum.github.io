@@ -24,14 +24,14 @@ Firefox hides the `http://` scheme on URLs in the address bar, but not for `http
 
 ## Preferences
 
-In its attempt to build an uninteresting clone of Chrome, Mozilla dropped its better-organized preferences page and copied the messy, all-in-one preferences page from Chrome. To use the old preferences page, set `browser.preferences.useOldOrganization = true`.
+~~In its attempt to build an uninteresting clone of Chrome, Mozilla dropped its better-organized preferences page and copied the messy, all-in-one preferences page from Chrome. To use the old preferences page, set `browser.preferences.useOldOrganization = true`.~~ (Can't do it anymore as of Firefox 57)
 
 # Disable other useless stuff
 
 ## Context menu bloating
 
-Despite many screenshoting apps do already exist, Mozilla has decided to bloat Firefox even more by adding its own app builtin into Firefox. Its adds yet another entry in the context menu. To disable it, set `extensions.screenshots.disabled = true`, it will also disable the related toolbar button.
+Despite many screenshoting apps do already exist, Mozilla has decided to bloat Firefox even more by adding its own app builtin into Firefox. It adds yet another entry in the context menu. To disable it, set `extensions.screenshots.disabled = true`, it will also disable the related toolbar button.
 
 ## Non-free Pocket service
 
-To disable the use of the Pocket extension, which promotes the non-free Pocket service, set `extensions.pocket.enabled = false`. This also disables the toolbar button. If the feature is really useful, open-source equivalents like [Wallabag](https://www.wallabag.org/) can be used.
+To disable the use of the Pocket extension, which can only use the non-free and noninteroperable Pocket service, set `extensions.pocket.enabled = false`. This also disables the toolbar button. If the feature is really useful, open-source equivalents like [Wallabag](https://www.wallabag.org/) can be used.
