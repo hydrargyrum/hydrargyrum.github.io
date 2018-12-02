@@ -94,7 +94,7 @@ An alias can be added in their shell so they can type the least to start the ass
 
 A `.sh` script or a shortcut can also be made on their desktop directory.
 
-## ~them/Desktop/assistance.desktop
+## `~them/Desktop/assistance.desktop`
 
 A shortcut:
 
