@@ -41,6 +41,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qr-shot](qr-shot): decode a QR code image from part of the screen
 - [coordapp](coordapp): always-on-top window that shows the mouse cursor coordinates
 - [qruler](qruler): tool window that measures width and height in pixels
+- [stickimage](https://github.com/hydrargyrum/attic/tree/master/stickimage): display an image always-on-top like a sticky note
 
 
 # Fun with graphics #
