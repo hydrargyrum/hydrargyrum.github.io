@@ -1,5 +1,6 @@
 ---
 layout: mine
+title: qr-shot - decode a QR code image from part of the screen
 ---
 
 # qr-shot

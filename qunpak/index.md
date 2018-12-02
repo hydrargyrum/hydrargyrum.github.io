@@ -1,6 +1,6 @@
 ---
 layout: mine
-title: qunpak
+title: qunpak - extract Quake I and II .pak files
 ---
 
 # qunpak

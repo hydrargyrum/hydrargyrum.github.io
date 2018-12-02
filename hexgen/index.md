@@ -1,5 +1,6 @@
 ---
 layout: mine
+title: hexgen - generate data from an hex dump
 ---
 
 # hexgen

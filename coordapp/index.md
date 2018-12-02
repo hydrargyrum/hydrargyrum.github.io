@@ -1,6 +1,6 @@
 ---
 layout: mine
-title: CoordApp
+title: CoordApp - always-on-top window that shows the mouse cursor coordinates
 ---
 
 # CoordApp #

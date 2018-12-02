@@ -1,6 +1,6 @@
 ---
 layout: mine
-title: SIT-Tagger
+title: SIT-Tagger - a simple image browser/viewer with tagging
 ---
 
 # SIT-Tagger #

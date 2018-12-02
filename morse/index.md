@@ -1,5 +1,6 @@
 ---
 layout: mine
+title: morse - text from/to Morse code converter, and optional beep player
 ---
 
 # morse

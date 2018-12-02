@@ -1,6 +1,6 @@
 ---
 layout: mine
-title: FLDev
+title: FLDev - expose partitions of a disk image in a virtual filesystem
 ---
 
 # FLDev #

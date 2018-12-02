@@ -1,6 +1,6 @@
 ---
 layout: mine
-title: timecalc
+title: timecalc - calculator of dates and durations
 ---
 
 # timecalc
