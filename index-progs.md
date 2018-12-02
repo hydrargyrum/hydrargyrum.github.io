@@ -24,6 +24,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
 - [timecalc](timecalc): calculator of dates and durations
 - [morse](morse): text from/to Morse code converter, and optional beep player
+- [boxuni](boxuni): convert ASCII diagrams into Unicode diagrams
 
 
 ## JSON helpers ##
