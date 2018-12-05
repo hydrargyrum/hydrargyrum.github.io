@@ -53,7 +53,7 @@ Sometimes, in a `git` repository, you build multiple unrelated features on your 
 
 You don't want to use `git-checkout(1)` everytime because you'd have to choose. Also, the path of the project is a single directory, so it's not possible to use from any [`git-worktree(1)`](https://git-scm.com/docs/git-worktree).
 
-Howevery, you would like to push each feature on your repository on separate branches.
+However, you would like to push each feature on your repository on separate branches.
 
 So, you would checkout to the branch when willing to push (or use `git-worktree`), `git-cherry-pick` commits associated to one feature from `develop`, and finally `git-push`.
 
