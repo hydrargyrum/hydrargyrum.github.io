@@ -15,6 +15,6 @@ Press arrow keys to move the ruler by 1 pixel in a direction.
 
 [Project repository](https://github.com/hydrargyrum/attic/tree/master/qruler)
 
-QRuler needs on Python and PyQt or PySide.
+QRuler needs Python and PyQt.
 QRuler is licensed under the [Do What the Fuck You Want to Public License](../wtfpl)
 
