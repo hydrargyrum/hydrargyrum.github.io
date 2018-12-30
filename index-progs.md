@@ -18,7 +18,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [univisible](univisible): tweak Unicode combinations and visualize them
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [iqontool](iqontool): pack multiple images into a .ico or .icns
-- [random-line](random-line): take a random line from stdin
+- [random-line](https://github.com/hydrargyrum/attic/blob/master/random-line/random-line): take a random line from stdin
 - [qunpak](qunpak): extract Quake I and II .pak files
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
@@ -66,7 +66,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 - [autocopier](r2w_plugins): rest2web plugin: automatically marks referenced images and files for inclusion at deployment
 - [rss](r2w_plugins): rest2web plugin: generate RSS feeds along with your pages
-- [supybot-shell](supybot-shell): Supybot plugin: execute shell commands and see their output
+- [supybot-shell](https://github.com/hydrargyrum/attic/tree/master/supybot-shell/Shell): Supybot plugin: execute shell commands and see their output
 
 
 # Articles #
