@@ -16,6 +16,19 @@ A calculator of dates and durations.
 
 Expressions can be given either on the command-line or in a Read-Eval-Print-Loop, if no argument is given.
 
+# Features
+
+* add/subtract durations together to get new durations
+* multiply/divide durations by numbers to get new durations
+* add/subtract durations to a datetime to get a new datetime
+* subtract 2 datetimes to get a duration
+* combine all of the above
+
+## Limitations
+
+* does not handle yet timezones
+* does not handle leap seconds
+
 # Download #
 
 [Project repository](https://github.com/hydrargyrum/timecalc)

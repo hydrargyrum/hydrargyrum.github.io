@@ -7,7 +7,7 @@ title: qunpak - extract Quake I and II .pak files
 
 Extract and list Quake .pak archive files
 
-# qunpak #
+# Examples
 
 With qunpak it is easy to extract a .pak file:
 
@@ -33,7 +33,12 @@ By default, files are extracted in current directory, but another directory can 
 qunpak -O /other/dir/where/to/extract PAK0.PAK
 ```
 
-# Download #
+# Features
+
+* list contents of a PAK archive
+* extract all content or only some files from a PAK archive
+
+# Download
 
 [Project repository](https://github.com/hydrargyrum/attic/tree/master/qunpak)
 

@@ -9,7 +9,7 @@ FLDev is a FUSE virtual filesystem that exposes the partitions of a disk image a
 
 As it uses FUSE, FLDev doesn't require root privileges.
 
-## Example ##
+# Example
 
 If `image.bin` is a disk image with a primary partition and a logical one (inside an extended partition):
 
@@ -22,12 +22,18 @@ hda1  hda2  hda5
 
 The partition files can be formatted, even mounted themselves if they contain a filesystem.
 
-## Download ##
+# Features
+
+* handles [many](https://www.gnu.org/software/parted/manual/html_node/mklabel.html#index-mklabel_002c-command-description) partition table formats by relying on [GNU libparted](https://www.gnu.org/software/parted/)
+* can run as user (it uses [FUSE](https://en.wikipedia.org/wiki/Filesystem_in_Userspace))
+
+
+# Download
 
 FLDev requires libgparted and libfuse to compile.
 
 [Project repository](https://github.com/hydrargyrum/fldev)
 
-## Warning ##
+# Warning
 
 Modifying the partition table while FLDev is mounted won't change the shown partitions.

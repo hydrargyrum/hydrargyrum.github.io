@@ -7,9 +7,9 @@ title: univisible - tweak Unicode combinations and visualize them
 
 A tool to visualize Unicode compositions
 
-## Role ##
+# Role
 
-### Reminder about Unicode ###
+## Reminder about Unicode
 
 Unicode has allows some of its codepoints to be combined together, for example an acute accent (COMBINING ACUTE ACCENT (U+0301)) preceded by an e (LATIN SMALL LETTER E (U+0065)) to produce an accented e: é. The acute accent is a "combining codepoint", because it can be placed after a non-combining codepoint. It can also be put after several combining codepoints, so they are all combined.
 
@@ -19,11 +19,11 @@ While these two ways are [equivalent](https://en.wikipedia.org/wiki/Unicode_equi
 
 To address the various possibilities, normalization was introduced, NFC/NFKC (which are normalized compositions) and NFD/NFKD (which are normalized decompositions).
 
-### univisible ###
+## univisible
 
 univisible can convert text to NFKC or NFKD form. It can also show visually the combining codepoints, by separating them from the codepoint they should have been combined with. And also display verbosely each codepoint.
 
-## Sample ##
+# Sample #
 
 ```
 % # see how our system prints "é":
@@ -64,7 +64,7 @@ The screenshot shows the graphical effect done by ``-v``:
 
 ![Screenshot](screenshot.png)
 
-## Usage ##
+# Usage examples
 
 Decompose Unicode from stdin to stdout:
 
@@ -90,10 +90,17 @@ Show verbose info of each codepoint:
 univisible -i < foo.txt
 ```
 
-## Requirements & Misc ##
+# Features
+
+* verbosely display info about each codepoint of an input string
+* decompose combined character into basic codepoints and combining codepoints of an input string (NFKD)
+* compose combining codepoints and characters if possible (NFKC)
+* highlight combining codepoints
+
+# Requirements & Misc
 
 univisible requires Python 3.
 
-## Download ##
+# Download
 
 [Project repository](https://github.com/hydrargyrum/attic/tree/master/univisible)

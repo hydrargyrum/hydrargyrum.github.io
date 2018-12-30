@@ -7,6 +7,14 @@ title: morse - text from/to Morse code converter, and optional beep player
 
 A tool to convert text from/to Morse code
 
+# Features
+
+* convert text to printable Morse code
+* convert printable Morse code to text
+* convert text to wav file playing Morse sound (or using `beep` command)
+
+# Examples
+
 Convert text to Morse:
 
 ```
@@ -40,3 +48,8 @@ Otherwise, a [wave output](output.wav) can be generated, with optional frequency
 
 `morse` is compatible with Python 2 and Python 3.
 It is licensed under the [WTFPLv2](../wtfpl).
+
+# See also
+
+[Screen-blinking Morse](blink.html) at [repository](https://github.com/hydrargyrum/attic/tree/master/morsehtml).
+

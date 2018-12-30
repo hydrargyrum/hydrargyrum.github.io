@@ -7,7 +7,14 @@ title: image2xterm
 
 image2xterm is an "image2ascii" program that uses terminal RGB24 mode or 256 colors
 
-## Usage ##
+# Features
+
+* uses [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
+* can use xterm's 256 colors
+* can use full RGB [24 bits colors](https://en.wikipedia.org/wiki/Color_depth#True_color_(24-bit))
+* can use [Unicode block characters](https://en.wikipedia.org/wiki/Box-drawing_character#Unicode) for finer resolution or simply plain ASCII spaces
+
+# Usage
 
 Display an image on a 256-colors capable terminal:
 
@@ -45,7 +52,7 @@ cat eggs.xans
 
 [eggs.xans](eggs.xans)
 
-## Requirements & Misc ##
+# Requirements & Misc
 
 image2xterm requires Python and the [Python Image Library](http://www.pythonware.com/library/pil/). image2xterm is licensed under the [WTFPLv2](../wtfpl).
 
@@ -53,6 +60,6 @@ The 256-colors palette is available [as PNG](xterm256palette.png). ![XTerm palet
 
 Convert any image to the XTerm 256-colors palette with ImageMagick: ``convert input.png -remap xterm256palette.png output.png``
 
-## Download ##
+# Download
 
 [Project repository](https://github.com/hydrargyrum/attic/tree/master/image2xterm)
