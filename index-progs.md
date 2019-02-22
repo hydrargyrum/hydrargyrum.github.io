@@ -19,6 +19,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [iqontool](iqontool): pack multiple images into a .ico or .icns
 - [random-line](https://github.com/hydrargyrum/attic/blob/master/random-line/random-line): take a random line from stdin
+- [cheapthrottle](https://github.com/hydrargyrum/attic/blob/master/cheapthrottle/cheapthrottle): throttle a command by repeatedly sending SIGSTOP and SIGCONT
 - [qunpak](qunpak): extract Quake I and II .pak files
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
