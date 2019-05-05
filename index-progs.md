@@ -5,36 +5,50 @@ title: The Attic - Programs
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
 
-# Tools #
+# GUI apps #
 
-- [FLDev](fldev): expose partitions of a disk image in a virtual filesystem
 - [SIT-Tagger](sit-tagger): a simple image browser/viewer with tagging
+- [EYE](https://github.com/hydrargyrum/eye): extensible text editor, scriptable in Python, beta version
+- [Lierre](https://github.com/hydrargyrum/lierre): tag-based mail client (leveraging [notmuch](https://notmuchmail.org/)), with plugins, alpha version
 
 
 # Command-line tools and one-liners #
 
-- [hexgen](hexgen): generate data from an hex dump
-- [tailsleep](tailsleep): like tail -f but quits when I/O activity stops
-- [univisible](univisible): tweak Unicode combinations and visualize them
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
-- [iqontool](iqontool): pack multiple images into a .ico or .icns
-- [random-line](https://github.com/hydrargyrum/attic/blob/master/random-line/random-line): take a random line from stdin
-- [cheapthrottle](https://github.com/hydrargyrum/attic/blob/master/cheapthrottle/cheapthrottle): throttle a command by repeatedly sending SIGSTOP and SIGCONT
-- [qunpak](qunpak): extract Quake I and II .pak files
-- [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
 - [timecalc](timecalc): calculator of dates and durations
 - [morse](morse): text from/to Morse code converter, and optional beep player
-- [boxuni](boxuni): convert ASCII diagrams into Unicode diagrams
 
 
-## JSON helpers ##
+## File formats ##
+
+- [FLDev](fldev): expose partitions of a disk image in a virtual filesystem
+- [hexgen](hexgen): generate data from an hex dump
+- [iqontool](iqontool): pack multiple images into a .ico or .icns
+- [qunpak](qunpak): extract Quake I and II .pak files
+- [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
+
+
+## JSON ##
 
 - [pjy](https://pypi.org/project/pjy/): process JSON data like [jq](https://stedolan.github.io/jq/), but with a standard Python syntax
 - [json2sqlite](jsontools/json2sqlite.html): insert JSON data in SQLite
 - [nested-jq](jsontools/nested-jq.html): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
 - [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
 - [json2csv](jsontools/json2csv.html): convert JSON data (a list of objects) to CSV
+
+
+## Unicode stuff ##
+
+- [univisible](univisible): tweak Unicode combinations and visualize them
+- [boxuni](boxuni): convert ASCII diagrams into Unicode diagrams
+
+
+## Filters and process management ##
+
+- [tailsleep](tailsleep): like tail -f but quits when I/O activity stops
+- [random-line](https://github.com/hydrargyrum/attic/blob/master/random-line/random-line): take a random line from stdin
+- [cheapthrottle](https://github.com/hydrargyrum/attic/blob/master/cheapthrottle/cheapthrottle): throttle a command by repeatedly sending SIGSTOP and SIGCONT
 
 
 # Tiny graphical helpers #
