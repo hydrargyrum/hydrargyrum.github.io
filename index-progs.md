@@ -12,7 +12,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [Lierre](https://github.com/hydrargyrum/lierre): tag-based mail client (leveraging [notmuch](https://notmuchmail.org/)), with plugins, alpha version
 
 
-# Command-line tools and one-liners #
+# Command-line tools #
 
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
