@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: Velib map in OsmAnd
+last_modified_at: 2014-03-23T22:14:22+01:00
 ---
 
 # Display Velib stations position map in OsmAnd #

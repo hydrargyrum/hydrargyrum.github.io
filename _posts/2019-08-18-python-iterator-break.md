@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: Python iterators termination
+last_modified_at: 2019-08-18T11:35:50+02:00
 tags: python
 ---
 

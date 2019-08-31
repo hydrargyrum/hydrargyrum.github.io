@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: git-rebase tips
+last_modified_at: 2018-12-05T08:50:29+01:00
 tags: git rebase git-rebase
 ---
 

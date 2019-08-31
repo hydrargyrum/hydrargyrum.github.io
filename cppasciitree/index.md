@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: C++ ASCII tree
+last_modified_at: 2014-06-19T08:26:07+02:00
 ---
 
 # C++ ASCII tree

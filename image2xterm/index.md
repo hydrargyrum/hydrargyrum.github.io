@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: image2xterm
+last_modified_at: 2018-12-30T22:21:20+01:00
 ---
 
 # image2xterm

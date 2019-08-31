@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
+last_modified_at: 2019-08-10T19:31:38+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).

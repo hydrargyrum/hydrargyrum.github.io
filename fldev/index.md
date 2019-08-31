@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: FLDev - expose partitions of a disk image in a virtual filesystem
+last_modified_at: 2018-12-30T22:21:20+01:00
 ---
 
 # FLDev #

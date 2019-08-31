@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: hexgen - generate data from an hex dump
+last_modified_at: 2018-12-02T19:19:09+01:00
 ---
 
 # hexgen

@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: timecalc - calculator of dates and durations
+last_modified_at: 2018-12-30T22:21:20+01:00
 ---
 
 # timecalc

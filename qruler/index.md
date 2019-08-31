@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: QRuler - tool window that measures width and height in pixels
+last_modified_at: 2018-12-30T22:55:36+01:00
 ---
 
 # QRuler #

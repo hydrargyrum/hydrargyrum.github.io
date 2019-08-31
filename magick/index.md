@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: ImageMagick stuff
+last_modified_at: 2015-01-18T13:57:07+01:00
 ---
 
 # ImageMagick stuff #

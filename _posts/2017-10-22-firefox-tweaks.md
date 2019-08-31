@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: Firefox config tweaks
+last_modified_at: 2018-05-05T11:07:57+02:00
 tags: firefox mozilla configuration
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: mine
 title: String escaping in Python
+last_modified_at: 2018-12-02T20:08:10+01:00
 tags: python string regex
 #original_date: 2018-01-20
 ---
