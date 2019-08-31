@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2019-08-10T19:31:38+02:00
+last_modified_at: 2019-08-31T19:28:34+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -19,7 +19,6 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
 - [timecalc](timecalc): calculator of dates and durations
 - [morse](morse): text from/to Morse code converter, and optional beep player
-- [vhd](https://github.com/hydrargyrum/attic/blob/master/vhd/vhd): visual hex dump, splitting at newlines, not fixed-width lines
 
 
 ## File formats ##
@@ -44,6 +43,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 - [univisible](univisible): tweak Unicode combinations and visualize them
 - [boxuni](boxuni): convert ASCII diagrams into Unicode diagrams
+- [vhd](vhd): visual hex dump, splitting at newlines, not fixed-width lines
 
 
 ## Filters and process management ##
