@@ -4,12 +4,11 @@
 # this is useful for jekyll-sitemap plugin
 # https://github.com/jekyll/jekyll-sitemap#lastmod-tag
 
-find -name '*.md' | while read f
+git ls-files '*.md' | while read f
 do
 	grep -q '^---$' "$f" || continue  # no front matter: not a jekyll file
 
-	dt=$(git log -1 --format=%cI "$f")
-	[ -n "$dt" ] || continue  # file isn't tracked by git
+	dt=$(git log -1 --grep last_modified_at --invert-grep --format=%aI "$f")
 
 	if grep -q '^last_modified_at: ' "$f"
 	then
