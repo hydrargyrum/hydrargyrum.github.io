@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2019-08-31T19:28:34+02:00
+last_modified_at: 2020-01-05T10:49:06+01:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -19,6 +19,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
 - [timecalc](timecalc): calculator of dates and durations
 - [morse](morse): text from/to Morse code converter, and optional beep player
+- [hibp](hibp): check if a password is leaked on "Have I Been Pwned?" (without sending it)
+- [httpshare](https://github.com/hydrargyrum/attic/tree/master/httpshare): share a directory via HTTP, like Python `http.server` but supports "Range" headers
 
 
 ## File formats ##
@@ -28,6 +30,12 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [iqontool](iqontool): pack multiple images into a .ico or .icns
 - [qunpak](qunpak): extract Quake I and II .pak files
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
+
+
+## Video/Audio ##
+
+- [ffmcut](https://github.com/hydrargyrum/attic/tree/master/ffmcut): ffmpeg wrapper to cut a video between 2 timestamps
+- [radiodump](https://github.com/hydrargyrum/attic/tree/master/radiodump): circular buffer and dump to file (useful for radio streams)
 
 
 ## JSON ##
@@ -51,9 +59,16 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [tailsleep](tailsleep): like tail -f but quits when I/O activity stops
 - [random-line](https://github.com/hydrargyrum/attic/blob/master/random-line/random-line): take a random line from stdin
 - [cheapthrottle](https://github.com/hydrargyrum/attic/blob/master/cheapthrottle/cheapthrottle): throttle a command by repeatedly sending SIGSTOP and SIGCONT
+- [xephyr-run-cmd](https://github.com/hydrargyrum/attic/tree/master/xephyr-run-cmd): run a Xephyr server and run a command in it (like xvfb-run)
 
 
-# Tiny graphical helpers #
+## Directory tools ##
+
+- [gen-indexhtml](https://github.com/hydrargyrum/attic/tree/master/gen-indexhtml): create an `index.html` listing all files in dir
+- [group-files-by-mtime](https://github.com/hydrargyrum/attic/tree/master/group-files-by-mtime): take files in a dir and move them to folders for each last modification time
+
+
+# Tiny graphical apps #
 
 - [qr-shot](qr-shot): decode a QR code image from part of the screen
 - [coordapp](coordapp): always-on-top window that shows the mouse cursor coordinates
