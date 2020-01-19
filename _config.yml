@@ -2,7 +2,7 @@ name: The Attic
 markdown: kramdown
 redcarpet:
   extensions: ["tables"]
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-feed
 permalink: /posts/:categories/:year-:month-:day-:title.html
