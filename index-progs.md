@@ -11,6 +11,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [SIT-Tagger](sit-tagger): a simple image browser/viewer with tagging
 - [EYE](https://github.com/hydrargyrum/eye): extensible text editor, scriptable in Python, beta version
 - [Lierre](https://github.com/hydrargyrum/lierre): tag-based mail client (leveraging [notmuch](https://notmuchmail.org/)), with plugins, alpha version
+- [Epistolaire](epistolaire): Android app to backup SMSes *and* MMSes to JSON
 
 
 # Command-line tools #
