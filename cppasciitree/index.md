@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: C++ ASCII tree
-last_modified_at: 2014-06-19T08:26:07+02:00
+last_modified_at: 2020-03-29T00:08:49+01:00
 ---
 
 # C++ ASCII tree
@@ -42,5 +42,3 @@ Node2 n2 =
 # Download #
 
 [Project repository](https://github.com/hydrargyrum/attic/tree/master/cppasciitree)
-
-hexgen uses Python 2 and is licensed under the [WTFPLv2](../wtfpl).

@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: morse - text from/to Morse code converter, and optional beep player
-last_modified_at: 2018-12-30T22:21:20+01:00
+last_modified_at: 2020-03-29T00:08:49+01:00
 ---
 
 # morse
@@ -47,7 +47,7 @@ Otherwise, a [wave output](output.wav) can be generated, with optional frequency
 
 [Project repository](https://github.com/hydrargyrum/attic/tree/master/morse)
 
-`morse` is compatible with Python 2 and Python 3.
+`morse` uses Python 3.
 It is licensed under the [WTFPLv2](../wtfpl).
 
 # See also
