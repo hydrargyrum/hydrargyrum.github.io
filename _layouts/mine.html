@@ -16,9 +16,21 @@
 	{{ content }}
 	</article>
 
+	{% if page.accept_comments %}
+		<section class="comments">
+			<h3>User comments</h3>
+			<opt-in-script src="https://commento.indigo.re/js/commento.js">
+				<button>Show comments/Post comment using Commento</button>
+			</opt-in-script>
+			<div id="commento"></div>
+		</section>
+	{% endif %}
 </main>
 
 {% include footer.html %}
+
+
+<script src="/js/opt-in-script.js"></script>
 
 </body>
 </html>
