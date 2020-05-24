@@ -17,7 +17,7 @@ h2 {
 	padding-right: 1em;
 }
 
-.title {
+header h1 {
 	text-align: center;
 }
 
@@ -29,7 +29,7 @@ a:visited {
 	color: #999;
 }
 
-.title a {
+h1 a, h1 a:link, h1 a:active {
 	color: white;
 }
 
