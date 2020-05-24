@@ -3,6 +3,7 @@ layout: mine
 title: Tips for debugging a Python program with GDB
 last_modified_at: 2019-05-05T11:32:41+02:00
 tags: python debugging gdb
+accept_comments: true
 ---
 
 # Tips for debugging a Python program with GDB

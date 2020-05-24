@@ -3,6 +3,7 @@ layout: mine
 title: Python AST and tokens
 last_modified_at: 2020-05-01T14:33:52+02:00
 tags: python,parsing
+accept_comments: true
 ---
 
 # Python AST and tokens

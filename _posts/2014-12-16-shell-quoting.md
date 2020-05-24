@@ -3,6 +3,7 @@ layout: mine
 title: Variables and quoting in shell
 last_modified_at: 2018-01-20T11:36:05+01:00
 tags: shell posix
+accept_comments: true
 ---
 
 # Quoting vars with spaces in shell

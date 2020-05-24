@@ -3,6 +3,7 @@ layout: mine
 title: SSH remote assistance
 last_modified_at: 2018-12-02T17:34:03+01:00
 tags: ssh assistance
+accept_comments: true
 ---
 
 # Remote SSH assistance

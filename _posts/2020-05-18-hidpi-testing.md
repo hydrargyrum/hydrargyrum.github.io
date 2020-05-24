@@ -3,6 +3,7 @@ layout: mine
 title: Simulating HiDPI
 last_modified_at: 2020-05-18T22:03:38+02:00
 tags: hidpi
+accept_comments: true
 ---
 
 # HiDPI

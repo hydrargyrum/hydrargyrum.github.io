@@ -3,6 +3,7 @@ layout: mine
 title: "Python 2: a few notes on super()"
 last_modified_at: 2018-01-29T09:08:39+01:00
 tags: python
+accept_comments: true
 ---
 
 # Python 2: don't pass `self.__class__` in super() call

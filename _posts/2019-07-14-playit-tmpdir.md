@@ -3,6 +3,7 @@ layout: mine
 title: "Tip: configuring ./play.it dirs"
 last_modified_at: 2019-07-14T18:50:46+02:00
 tags: play.it
+accept_comments: true
 ---
 
 # Tip: configuring `./play.it` dirs

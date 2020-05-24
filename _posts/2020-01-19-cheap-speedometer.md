@@ -3,6 +3,7 @@ layout: mine
 title: Cheap SSH speedometer
 last_modified_at: 2020-01-19T19:10:46+01:00
 tags: ssh
+accept_comments: true
 ---
 
 # Cheap SSH speedometer

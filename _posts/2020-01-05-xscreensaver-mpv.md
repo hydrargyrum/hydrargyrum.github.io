@@ -3,6 +3,7 @@ layout: mine
 title: "Tip: play videos as a screensaver thanks to mpv"
 last_modified_at: 2020-01-05T11:19:32+01:00
 tags: xscreensaver mpv
+accept_comments: true
 ---
 
 # Tip: play videos as screensaver thanks to mpv

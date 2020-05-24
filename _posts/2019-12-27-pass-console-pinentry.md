@@ -3,6 +3,7 @@ layout: mine
 title: pass and console pinentry
 last_modified_at: 2019-12-27T11:32:52+01:00
 tags: shell
+accept_comments: true
 ---
 
 # Force console pinentry for `pass` (and `gpg`)

@@ -3,6 +3,7 @@ layout: mine
 title: Some notes on symbolic links
 last_modified_at: 2019-08-31T12:31:45+02:00
 tags: shell
+accept_comments: true
 ---
 
 # `ln` reminder

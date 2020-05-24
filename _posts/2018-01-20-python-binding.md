@@ -3,6 +3,7 @@ layout: mine
 title: Python name binding
 last_modified_at: 2018-01-20T23:45:57+01:00
 tags: python scope
+accept_comments: true
 ---
 
 # Python name binding
