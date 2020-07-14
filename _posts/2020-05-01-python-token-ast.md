@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: Python AST and tokens
-last_modified_at: 2020-05-01T14:33:52+02:00
+last_modified_at: 2020-07-14T16:22:06+02:00
 tags: python,parsing
 accept_comments: true
 ---
@@ -249,7 +249,7 @@ is represented by the same AST as if we used this source code instead:
 
 Groups are left-to-right because binary plus (`+`) operator is left-associative.
 
-[Precendence](https://docs.python.org/3/reference/expressions.html#operator-precedence) of operators is taken in to account:
+[Precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence) of operators is taken into account:
 
 	1 + 2 * a . b
 
