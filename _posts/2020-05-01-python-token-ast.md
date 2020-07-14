@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: Python AST and tokens
-last_modified_at: 2020-07-14T16:22:06+02:00
+last_modified_at: 2020-07-14T22:49:20+02:00
 tags: python,parsing
 accept_comments: true
 ---
@@ -257,6 +257,17 @@ is:
 
 	(1 + (2 * (a.b)))
 
+### booleans
+
+In Python boolean operators `and` and `or` are a little different.
+Arithmetic binary operators are represented by the [`ast.BinOp`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#BinOp) node type which holds exactly 2 operands (`left` and `right`),
+but boolean are represented by [`ast.BoolOp`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#BoolOp) node type, which can hold more than 2 operands for a chained operation (as in `foo and bar and baz`).
+
+### comparisons
+
+Also in Python, comparisons can be chained, as in `foo < bar < baz`.
+Thus comparisons are represented by the [`ast.Compare`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#Compare) node type which allows chaining.
+
 
 ## `if`/`elif`/`else`
 
@@ -299,3 +310,39 @@ is represented by the same AST as:
 	(a, *b) = f()
 	tup = (1, 2, 3)
 
+## dictionary unpacking
+
+### in a dict literal
+
+This snippet:
+
+	{
+		foo: bar,
+		None: baz,
+		**other,
+	}
+
+is represented by an [`ast.Dict()`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#Dict) node with 3 `keys`:
+
+- [`ast.Name('foo')`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#Name)
+- [`ast.Constant(None)`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#Constant)
+- `None`, the value, not a node like `ast.Constant(None)`
+
+and 3 `values`, the last one is `ast.Name('other')`.
+
+In short, a "star-mapping" in a `ast.Dict()` is a regular pair but with a `None` key (and the mapping is the corresponding value).
+
+### in a function call
+
+Similarly to a dict literal ([`ast.Dict`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#Dict)),
+a function call ([`ast.Call`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#Call)) can receive key-value pairs and dict unpacking.
+
+Unlike `ast.Dict` which has `keys` and `values` fields, from which one would have to make pairs manually, `ast.Call` has the pairs already formed in `keywords` field. And similarly to `ast.Dict`, when the key part of the pair is `None`, it means there is dictionary unpacking:
+
+	func(foo=1, bar=2, **c)
+
+has 3 pairs in `keywords`, whose keys are:
+
+- [`ast.Name('foo')`](https://greentreesnakes.readthedocs.io/en/latest/nodes.html#Name)
+- `ast.Name('bar')`
+- `None`
