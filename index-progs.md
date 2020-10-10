@@ -32,6 +32,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qunpak](qunpak): extract Quake I and II .pak files
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [mdsaw](mdsaw): compose/decompose text files with multiple markdown sections
+- [log-snippet](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-snippet): parse compilation-log and show snippets of files with context
 
 
 ## Video/Audio ##
@@ -47,6 +48,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [nested-jq](jsontools/nested-jq.html): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
 - [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
 - [json2csv](jsontools/json2csv.html): convert JSON data (a list of objects) to CSV
+- [flatten-json](https://gitlab.com/hydrargyrum/attic/-/tree/master/flatten-json): flatten a deep JSON tree in a single object (or reverse operation)
 
 
 ## Unicode stuff ##
@@ -54,7 +56,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [univisible](univisible): tweak Unicode combinations and visualize them
 - [boxuni](boxuni): convert ASCII diagrams into Unicode diagrams
 - [qr2unicode](qr2unicode): display QR-codes on console using Unicode box-drawing characters
-- [vhd](vhd): visual hex dump, splitting at newlines, not fixed-width lines
+- [vhd](vhd): visual hex dump, splitting at newlines, instead of classical hex dump fixed-width lines
+- [realign-text-table](https://gitlab.com/hydrargyrum/attic/-/tree/master/realign-text-table): tool to rebuild plain-text table
 
 
 ## Filters and process management ##
@@ -85,6 +88,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [ImageMagick stuff](magick): (including "how to read a CAPTCHA on console with ImageMagick")
 - [image2xterm](image2xterm): display an image on console using terminal RGB24 mode or 256 colors
 - [fonts2png](fonts2png): render TTF fonts samples to image files
+- [svg-to-dia](https://gitlab.com/hydrargyrum/svg-to-dia): import arbitrary SVG files into [Dia](https://wiki.gnome.org/Apps/Dia/)
 - [qr2unicode](qr2unicode): display QR-codes on console using Unicode box-drawing characters
 - [Some images](gfx)
 
