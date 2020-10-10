@@ -104,7 +104,3 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [rss](r2w_plugins): rest2web plugin: generate RSS feeds along with your pages
 - [supybot-shell](https://github.com/hydrargyrum/attic/tree/master/supybot-shell/Shell): Supybot plugin: execute shell commands and see their output
 
-
-# Articles #
-
-- [Display Velib stations positions in OsmAnd](misc/velib-gpx-osmand.html)
