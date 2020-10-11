@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2020-04-12T20:39:00+02:00
+last_modified_at: 2020-10-11T10:17:06+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -107,4 +107,10 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [autocopier](r2w_plugins): rest2web plugin: automatically marks referenced images and files for inclusion at deployment
 - [rss](r2w_plugins): rest2web plugin: generate RSS feeds along with your pages
 - [supybot-shell](https://github.com/hydrargyrum/attic/tree/master/supybot-shell/Shell): Supybot plugin: execute shell commands and see their output
+
+
+# Training #
+
+- [git exercises](https://framagit.org/git-exercises): exercice yourself on some git advanced topics
+- [python exercises](https://gitlab.com/hydrargyrum/python-exercises): mildly advanced Python exercises
 

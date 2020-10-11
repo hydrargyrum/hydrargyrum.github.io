@@ -2,7 +2,7 @@
 layout: mine
 title: Announcing git exercises
 last_modified_at: 2018-12-02T20:08:36+01:00
-tags: git exercises
+tags: git training
 accept_comments: true
 ---
 
