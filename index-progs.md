@@ -22,6 +22,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [morse](morse): text from/to Morse code converter, and optional beep player
 - [hibp](hibp): check if a password is leaked on "Have I Been Pwned?" (without sending it)
 - [httpshare](https://github.com/hydrargyrum/attic/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
+- [headset-bluez](https://gitlab.com/hydrargyrum/attic/-/tree/master/headset-bluez): enable a bluetooth headset and out or in/out mode
 
 
 ## File formats ##
@@ -32,18 +33,19 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qunpak](qunpak): extract Quake I and II .pak files
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [mdsaw](mdsaw): compose/decompose text files with multiple markdown sections
-- [log-snippet](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-snippet): parse compilation-log and show snippets of files with context
+- [pdf-watermark](https://gitlab.com/hydrargyrum/attic/-/tree/master/pdf-watermark): pdf-watermark: watermark a chosen message on a PDF
 
 
 ## Video/Audio ##
 
 - [ffmcut](https://github.com/hydrargyrum/attic/tree/master/ffmcut): ffmpeg wrapper to cut a video between 2 timestamps
 - [radiodump](https://github.com/hydrargyrum/attic/tree/master/radiodump): circular buffer and dump to file (useful for radio streams)
+- [united-ost](https://gitlab.com/hydrargyrum/united-ost): extract sound files from Unity games
 
 
 ## JSON ##
 
-- [pjy](https://pypi.org/project/pjy/): process JSON data like [jq](https://stedolan.github.io/jq/), but with a standard Python syntax
+- [pjy](https://pypi.org/project/pjy/): process JSON data like [jq](https://stedolan.github.io/jq/), but with a reasonable Python syntax
 - [json2sqlite](jsontools/json2sqlite.html): insert JSON data in SQLite
 - [nested-jq](jsontools/nested-jq.html): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
 - [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
@@ -66,6 +68,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [random-line](https://github.com/hydrargyrum/attic/blob/master/random-line/random-line): take a random line from stdin
 - [cheapthrottle](https://github.com/hydrargyrum/attic/blob/master/cheapthrottle/cheapthrottle): throttle a command by repeatedly sending SIGSTOP and SIGCONT
 - [xephyr-run-cmd](https://github.com/hydrargyrum/attic/tree/master/xephyr-run-cmd): run a Xephyr server and run a command in it (like xvfb-run)
+- [log-snippet](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-snippet): parse compilation-log and show snippets of files with context
+- [log-ts-diff](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-ts-diff): parse log and replace timestamps with diff to previous timestamp
 
 
 ## Directory tools ##
