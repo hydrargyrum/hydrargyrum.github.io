@@ -21,7 +21,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [timecalc](timecalc): calculator of dates and durations
 - [morse](morse): text from/to Morse code converter, and optional beep player
 - [hibp](hibp): check if a password is leaked on "Have I Been Pwned?" (without sending it)
-- [httpshare](https://github.com/hydrargyrum/attic/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
+- [httpshare](https://gitlab.com/hydrargyrum/attic/-/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
 - [headset-bluez](https://gitlab.com/hydrargyrum/attic/-/tree/master/headset-bluez): enable a bluetooth headset and out or in/out mode
 
 
@@ -38,8 +38,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 ## Video/Audio ##
 
-- [ffmcut](https://github.com/hydrargyrum/attic/tree/master/ffmcut): ffmpeg wrapper to cut a video between 2 timestamps
-- [radiodump](https://github.com/hydrargyrum/attic/tree/master/radiodump): circular buffer and dump to file (useful for radio streams)
+- [ffmcut](https://gitlab.com/hydrargyrum/attic/-/tree/master/ffmcut): ffmpeg wrapper to cut a video between 2 timestamps
+- [radiodump](https://gitlab.com/hydrargyrum/attic/-/tree/master/radiodump): circular buffer and dump to file (useful for radio streams)
 - [united-ost](https://gitlab.com/hydrargyrum/united-ost): extract sound files from Unity games
 
 
@@ -65,17 +65,17 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 ## Filters and process management ##
 
 - [tailsleep](tailsleep): like tail -f but quits when I/O activity stops
-- [random-line](https://github.com/hydrargyrum/attic/blob/master/random-line/random-line): take a random line from stdin
-- [cheapthrottle](https://github.com/hydrargyrum/attic/blob/master/cheapthrottle/cheapthrottle): throttle a command by repeatedly sending SIGSTOP and SIGCONT
-- [xephyr-run-cmd](https://github.com/hydrargyrum/attic/tree/master/xephyr-run-cmd): run a Xephyr server and run a command in it (like xvfb-run)
+- [random-line](https://gitlab.com/hydrargyrum/attic/-/blob/master/random-line/random-line): take a random line from stdin
+- [cheapthrottle](https://gitlab.com/hydrargyrum/attic/-/blob/master/cheapthrottle/cheapthrottle): throttle a command by repeatedly sending SIGSTOP and SIGCONT
+- [xephyr-run-cmd](https://gitlab.com/hydrargyrum/attic/-/tree/master/xephyr-run-cmd): run a Xephyr server and run a command in it (like xvfb-run)
 - [log-snippet](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-snippet): parse compilation-log and show snippets of files with context
 - [log-ts-diff](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-ts-diff): parse log and replace timestamps with diff to previous timestamp
 
 
 ## Directory tools ##
 
-- [gen-indexhtml](https://github.com/hydrargyrum/attic/tree/master/gen-indexhtml): create an `index.html` listing all files in dir
-- [group-files-by-mtime](https://github.com/hydrargyrum/attic/tree/master/group-files-by-mtime): take files in a dir and move them to folders for each last modification time
+- [gen-indexhtml](https://gitlab.com/hydrargyrum/attic/-/tree/master/gen-indexhtml): create an `index.html` listing all files in dir
+- [group-files-by-mtime](https://gitlab.com/hydrargyrum/attic/-/tree/master/group-files-by-mtime): take files in a dir and move them to folders for each last modification time
 
 
 # Tiny graphical apps #
@@ -83,7 +83,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qr-shot](qr-shot): decode a QR code image from part of the screen
 - [coordapp](coordapp): always-on-top window that shows the mouse cursor coordinates
 - [qruler](qruler): tool window that measures width and height in pixels
-- [qgifview](https://github.com/hydrargyrum/attic/tree/master/qgifview): basic GIF viewer
+- [qgifview](https://gitlab.com/hydrargyrum/attic/-/tree/master/qgifview): basic GIF viewer
 - [stickimage](stickimage): display an image always-on-top like a sticky note
 
 
@@ -100,8 +100,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 # Libraries #
 
 - [vignette](https://github.com/hydrargyrum/vignette): a Python library for generating thumbnails following the FreeDesktop specification [[documentation](https://vignette.readthedocs.io)]
-- [qorbeille](https://github.com/hydrargyrum/qorbeille): a Qt library to trash files to recycle bin
-- [qvariantjson](https://github.com/hydrargyrum/qvariantjson): yet another Qt4 JSON library
+- [qorbeille](https://gitlab.com/hydrargyrum/qorbeille): a Qt library to trash files to recycle bin
+- [qvariantjson](https://gitlab.com/hydrargyrum/qvariantjson): yet another Qt4 JSON library
 - [C++ ASCII tree](cppasciitree): an example of how to hardcode a tree with source code looking like the actual tree
 - a patch for upgrading [pycairo to cairo 0.12](py2cairo)
 
@@ -110,7 +110,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 - [autocopier](r2w_plugins): rest2web plugin: automatically marks referenced images and files for inclusion at deployment
 - [rss](r2w_plugins): rest2web plugin: generate RSS feeds along with your pages
-- [supybot-shell](https://github.com/hydrargyrum/attic/tree/master/supybot-shell/Shell): Supybot plugin: execute shell commands and see their output
+- [supybot-shell](https://gitlab.com/hydrargyrum/attic/-/tree/master/supybot-shell/Shell): Supybot plugin: execute shell commands and see their output
 
 
 # Training #
