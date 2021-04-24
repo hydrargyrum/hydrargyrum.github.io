@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2020-10-11T10:17:06+02:00
+last_modified_at: 2021-04-24T18:05:30+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -33,7 +33,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qunpak](qunpak): extract Quake I and II .pak files
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [mdsaw](mdsaw): compose/decompose text files with multiple markdown sections
-- [pdf-watermark](https://gitlab.com/hydrargyrum/attic/-/tree/master/pdf-watermark): pdf-watermark: watermark a chosen message on a PDF
+- [pdf-watermark](https://gitlab.com/hydrargyrum/attic/-/tree/master/pdf-watermark): watermark a chosen message on a PDF
+- [KelpMark](https://gitlab.com/hydrargyrum/kelpmark): GUI for watermarking images or PDFs
 
 
 ## Video/Audio ##
@@ -70,6 +71,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [xephyr-run-cmd](https://gitlab.com/hydrargyrum/attic/-/tree/master/xephyr-run-cmd): run a Xephyr server and run a command in it (like xvfb-run)
 - [log-snippet](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-snippet): parse compilation-log and show snippets of files with context
 - [log-ts-diff](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-ts-diff): parse log and replace timestamps with diff to previous timestamp
+- [pvrun](https://gitlab.com/hydrargyrum/attic/-/tree/master/pvrun): run a command and show its I/O progress with [pv](http://www.ivarch.com/programs/pv.shtml)
 
 
 ## Directory tools ##
@@ -99,7 +101,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 # Libraries #
 
-- [vignette](https://github.com/hydrargyrum/vignette): a Python library for generating thumbnails following the FreeDesktop specification [[documentation](https://vignette.readthedocs.io)]
+- [vignette](https://pypi.org/project/vignette/): a Python library for generating thumbnails following the FreeDesktop specification [[documentation](https://vignette.readthedocs.io)]
 - [qorbeille](https://gitlab.com/hydrargyrum/qorbeille): a Qt library to trash files to recycle bin
 - [qvariantjson](https://gitlab.com/hydrargyrum/qvariantjson): yet another Qt4 JSON library
 - [C++ ASCII tree](cppasciitree): an example of how to hardcode a tree with source code looking like the actual tree
