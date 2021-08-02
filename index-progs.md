@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2021-04-24T18:05:30+02:00
+last_modified_at: 2021-08-02T22:20:11+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -117,6 +117,6 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 # Training #
 
-- [git exercises](https://framagit.org/git-exercises): exercice yourself on some git advanced topics
+- [git exercises](https://framagit.org/git-exercises/index): exercise yourself on some git advanced topics
 - [python exercises](https://gitlab.com/hydrargyrum/python-exercises): mildly advanced Python exercises
 
