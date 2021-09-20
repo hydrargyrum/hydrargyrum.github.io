@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: vhd - Visual Hex Dump
-last_modified_at: 2019-08-31T19:28:34+02:00
+last_modified_at: 2021-09-20T22:09:36+02:00
 ---
 
 # vhd - Visual Hex Dump
@@ -32,6 +32,20 @@ Display bytes addresses of line starts:
 	00000000  s   i   m   p   l   e   sp  l   i   n   e   \n
 	0000000c  o   f   sp  t   e   x   t   .   .   .   \n
 	00000017  n   o   n   -   a   s   c   i   i   :   sp  r   c3  a9  s   u   m   c3  a9  \n
+
+See DOS end-of-lines:
+
+	% ( echo simple line; echo of text... ; echo non-ascii: résumé ) | todos | vhd
+	s  i  m  p  l  e  sp l  i  n  e  \r \n
+	o  f  sp t  e  x  t  .  .  .  \r \n
+	n  o  n  -  a  s  c  i  i  :  sp r  C3 A9 s  u  m  C3 A9 \r \n
+
+Compared to VIm's `xxd` which makes it difficult to see lines:
+
+	% ( echo simple line; echo of text... ; echo non-ascii: résumé ) | xxd
+	00000000: 7369 6d70 6c65 206c 696e 650a 6f66 2074  simple line.of t
+	00000010: 6578 742e 2e2e 0a6e 6f6e 2d61 7363 6969  ext....non-ascii
+	00000020: 3a20 72c3 a973 756d c3a9 0a              : r..sum...
 
 # Requirements & Misc
 
