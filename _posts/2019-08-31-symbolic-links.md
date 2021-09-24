@@ -92,9 +92,9 @@ When `cp` is used with a target which is a symbolic link, the pointer is opened 
 	% cp quux slink
 	% ll
 	total 8
-	-rw-r--r-- 1 ntome ntome 5 Aug 31 12:22 foo
-	-rw-r--r-- 1 ntome ntome 5 Aug 31 12:22 quux
-	lrwxrwxrwx 1 ntome ntome 3 Aug 31 12:22 slink -> foo
+	-rw-r--r-- 1 user user 5 Aug 31 12:22 foo
+	-rw-r--r-- 1 user user 5 Aug 31 12:22 quux
+	lrwxrwxrwx 1 user user 3 Aug 31 12:22 slink -> foo
 
 # Link to a symlink
 
@@ -108,7 +108,7 @@ Adding `-f` will overwrite the pointer, not the pointee.
 	% ln -fs quux slink
 	% ll
 	total 8
-	-rw-r--r-- 1 ntome ntome 4 Aug 31 12:24 foo
-	-rw-r--r-- 1 ntome ntome 5 Aug 31 12:22 quux
-	lrwxrwxrwx 1 ntome ntome 4 Aug 31 12:29 slink -> quux
+	-rw-r--r-- 1 user user 4 Aug 31 12:24 foo
+	-rw-r--r-- 1 user user 5 Aug 31 12:22 quux
+	lrwxrwxrwx 1 user user 4 Aug 31 12:29 slink -> quux
 
