@@ -17,7 +17,7 @@ For example, it can be used to display on screen a new keyboard layout image you
 
 # Download
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/stickimage)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/stickimage)
 
 StickImage needs Python and PyQt.
 StickImage is licensed under the [Do What the Fuck You Want to Public License](../wtfpl)

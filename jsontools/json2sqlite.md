@@ -97,6 +97,6 @@ It's possible to match on multiple columns by using several '-u'. Here we'll upd
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/json2sqlite)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/json2sqlite)
 
 json2sqlite uses Python 2 and is licensed under the [WTFPLv2](../wtfpl).

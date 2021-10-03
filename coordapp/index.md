@@ -17,7 +17,7 @@ CoordApp is a simple mouse-coordinates displayer.
 
 ## Download ##
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/coordapp)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/coordapp)
 
 CoordApp requires Python and PyQt or PySide.
 CoordApp is licensed under the the [WTFPLv2 ../wtfpl].

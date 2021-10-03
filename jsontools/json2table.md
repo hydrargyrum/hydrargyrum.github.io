@@ -60,6 +60,6 @@ The columns are displayed in the same order as in the file. It's possible to reo
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/json2table)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/json2table)
 
 json2table uses Python 3 and PrettyTable and is licensed under the [WTFPLv2](../wtfpl).

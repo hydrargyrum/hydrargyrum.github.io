@@ -38,6 +38,6 @@ will get the value of the `bar` key nested in the JSON data contained in the `fo
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/nested-jq)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/nested-jq)
 
 It is licensed under the [WTFPLv2](../wtfpl).

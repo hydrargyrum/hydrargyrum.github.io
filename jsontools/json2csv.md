@@ -57,6 +57,6 @@ The columns are displayed in the same order as in the file. It's possible to reo
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/json2csv)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/json2csv)
 
 json2csv uses Python 3 and is licensed under the [WTFPLv2](../wtfpl).

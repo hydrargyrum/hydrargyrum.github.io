@@ -29,6 +29,6 @@ easy to notice visually.
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/redmine2ical)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/redmine2ical)
 
 redmine2ical uses Python 2 and is licensed under the [WTFPLv2](../wtfpl).

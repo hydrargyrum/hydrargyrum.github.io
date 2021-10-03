@@ -41,6 +41,6 @@ qunpak -O /other/dir/where/to/extract PAK0.PAK
 
 # Download
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/qunpak)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/qunpak)
 
 qunpak uses Python 3 and is licensed under the [WTFPLv2](../wtfpl).

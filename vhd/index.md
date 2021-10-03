@@ -53,5 +53,5 @@ Compared to VIm's `xxd` which makes it difficult to see lines:
 
 # Project repository
 
-[Download](https://github.com/hydrargyrum/attic/tree/master/vhd)
+[Download](https://gitlab.com/hydrargyrum/attic/tree/master/vhd)
 

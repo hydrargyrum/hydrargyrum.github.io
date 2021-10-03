@@ -41,4 +41,4 @@ Node2 n2 =
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/cppasciitree)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/cppasciitree)

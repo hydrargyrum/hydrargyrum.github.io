@@ -63,4 +63,4 @@ Convert any image to the XTerm 256-colors palette with ImageMagick: ``convert in
 
 # Download
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/image2xterm)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/image2xterm)

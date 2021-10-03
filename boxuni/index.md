@@ -36,4 +36,4 @@ boxuni requires Python3. It is licensed under the [WTFPLv2](../wtfpl).
 
 # Download
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/boxuni)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/boxuni)

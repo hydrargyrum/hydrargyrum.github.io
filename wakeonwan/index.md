@@ -20,4 +20,4 @@ wakeonwan myhost.example.org 12-34-56-78-9A-BC
 
 wakeonwan requires Ruby and is licensed under the [WTFPLv2](../wtfpl).
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/wakeonwan)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/wakeonwan)

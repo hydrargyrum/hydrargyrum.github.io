@@ -32,7 +32,7 @@ Expressions can be given either on the command-line or in a Read-Eval-Print-Loop
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/timecalc)
+[Project repository](https://gitlab.com/hydrargyrum/timecalc)
 
 timecalc uses Python 3 and is licensed under the [WTFPLv2](../wtfpl).
 

@@ -25,4 +25,4 @@ qr-shot is licensed under the [WTFPLv2](../wtfpl).
 
 ## Download ##
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/qr-shot)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/qr-shot)

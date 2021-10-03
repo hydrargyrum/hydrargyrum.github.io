@@ -71,7 +71,7 @@ But this is cumbersome to do multiple times. When amending commits on branch `de
 
 ### git-recpbranch
 
-[Using a basic script](https://github.com/hydrargyrum/attic/blob/master/git/git-recpbranch), we could take updated commits from `develop` and drop the obsolete ones.
+[Using a basic script](https://gitlab.com/hydrargyrum/attic/blob/master/git/git-recpbranch), we could take updated commits from `develop` and drop the obsolete ones.
 
 Since there's no semantic id on git, it's impossible to identify which commit is an old "version", not amended, of another commit.
 

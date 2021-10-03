@@ -51,6 +51,6 @@ to rebuild the original file.
 # Download #
 
 [Project repository](https://gitlab.com/hydrargyrum/mdsaw)
-([GitHub mirror](https://github.com/hydrargyrum/mdsaw)).
+([deprecated github mirror](https://github.com/hydrargyrum/mdsaw)).
 
 mdsaw uses Python 3 and is licensed under the [Unlicense](https://unlicense.org/).

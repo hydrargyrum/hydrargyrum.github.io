@@ -30,4 +30,4 @@ done
 
 tailsleep requires Python 3 and is licensed under the [WTFPLv2](../wtfpl).
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/tailsleep)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/tailsleep)

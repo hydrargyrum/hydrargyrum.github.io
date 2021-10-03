@@ -33,7 +33,7 @@ The partition files can be formatted, even mounted themselves if they contain a 
 
 FLDev requires libgparted and libfuse to compile.
 
-[Project repository](https://github.com/hydrargyrum/fldev)
+[Project repository](https://gitlab.com/hydrargyrum/fldev)
 
 # Warning
 

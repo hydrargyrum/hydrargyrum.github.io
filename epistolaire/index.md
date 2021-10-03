@@ -37,7 +37,7 @@ Epistolaire's repository contains several [tools](https://gitlab.com/hydrargyrum
 # Download
 [On F-Droid](https://f-droid.org/fr/packages/re.indigo.epistolaire/)
 
-[Gitlab project repository](https://gitlab.com/hydrargyrum/epistolaire) (and [on Github](https://github.com/hydrargyrum/epistolaire) too)
+[Gitlab project repository](https://gitlab.com/hydrargyrum/epistolaire) (and [deprecated github mirror](https://github.com/hydrargyrum/epistolaire))
 
 # License
 Epistolaire is licensed under the [Unlicense](https://unlicense.org/).

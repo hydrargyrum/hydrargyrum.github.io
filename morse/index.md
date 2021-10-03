@@ -45,12 +45,12 @@ Otherwise, a [wave output](output.wav) can be generated, with optional frequency
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/morse)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/morse)
 
 `morse` uses Python 3.
 It is licensed under the [WTFPLv2](../wtfpl).
 
 # See also
 
-[Screen-blinking Morse](blink.html) at [repository](https://github.com/hydrargyrum/attic/tree/master/morsehtml).
+[Screen-blinking Morse](blink.html) at [repository](https://gitlab.com/hydrargyrum/attic/tree/master/morsehtml).
 

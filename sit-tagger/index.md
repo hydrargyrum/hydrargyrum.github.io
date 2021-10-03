@@ -84,4 +84,4 @@ SIT-Tagger requires Python 3, PyQt5 and [vignette](https://pypi.org/project/vign
 
 It is licensed under the WTFPLv2.
 
-[Project repository](https://github.com/hydrargyrum/sit-tagger)
+[Project repository](https://gitlab.com/hydrargyrum/sit-tagger)

@@ -39,6 +39,6 @@ password: hunter2
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/keepassxprint)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/keepassxprint)
 
 keepassxprint uses Python 2 and is licensed under the [WTFPLv2](../wtfpl).

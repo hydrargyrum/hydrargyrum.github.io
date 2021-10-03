@@ -21,6 +21,6 @@ It ignores whitespace and will error if a non-hex digit is found.
 
 # Download #
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/hexgen)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/hexgen)
 
 hexgen uses Python 3 and is licensed under the [WTFPLv2](../wtfpl).

@@ -58,4 +58,4 @@ qr2unicode is licensed under the [WTFPLv2](../wtfpl).
 
 # Download
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/qr2unicode)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/qr2unicode)

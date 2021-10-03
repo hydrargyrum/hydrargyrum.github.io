@@ -40,7 +40,7 @@ A shell and ImageMagick. fonts2png is licensed under the [WTFPLv2 ../wtfpl]. fon
 
 ## Download ##
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/fonts2png)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/fonts2png)
 
 ## History ##
 

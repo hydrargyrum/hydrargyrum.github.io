@@ -104,4 +104,4 @@ univisible requires Python 3.
 
 # Download
 
-[Project repository](https://github.com/hydrargyrum/attic/tree/master/univisible)
+[Project repository](https://gitlab.com/hydrargyrum/attic/tree/master/univisible)
