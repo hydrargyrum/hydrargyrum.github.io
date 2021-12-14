@@ -10,3 +10,10 @@ collections:
   posts_data:
     output: true
     permalink: /posts/:path
+defaults:
+  -
+    scope:
+      # "" is for every file
+      path: ""
+    values:
+      layout: mine
