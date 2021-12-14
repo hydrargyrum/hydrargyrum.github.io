@@ -30,8 +30,9 @@
 
 {% include footer.html %}
 
-
-<script src="/js/opt-in-script.js"></script>
+{% if page.accept_comments %}
+	<script src="/js/opt-in-script.js"></script>
+{% endif %}
 
 </body>
 </html>
