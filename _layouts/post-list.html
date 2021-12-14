@@ -16,7 +16,8 @@
 <div class="content post-list">
 <ul>
     {% for post in site.posts %}
-        <li><a href="{{ post.url }}"><span class="post-date">{{ post.date | date: "%Y/%m/%d" }}</span> <span class="post-title">{{ post.title }}</span></a></li>
+        <li><a href="{{ post.url }}"><time datetime="{{ post.date }}" class="post-date">{{ post.date | date: "%Y-%m-%d" }}</time>
+            <span class="post-title">{{ post.title }}</span></a></li>
     {% endfor %}
 </ul>
 </div>
