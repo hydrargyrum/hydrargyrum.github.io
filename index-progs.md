@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2021-08-02T22:20:11+02:00
+last_modified_at: 2021-12-19T17:52:05+01:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -16,13 +16,17 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 # Command-line tools #
 
-- [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [redmine2ical](redmine2ical): convert Redmine's timesheet to iCalendar format
 - [timecalc](timecalc): calculator of dates and durations
 - [morse](morse): text from/to Morse code converter, and optional beep player
 - [hibp](hibp): check if a password is leaked on "Have I Been Pwned?" (without sending it)
-- [httpshare](https://gitlab.com/hydrargyrum/attic/-/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
 - [headset-bluez](https://gitlab.com/hydrargyrum/attic/-/tree/master/headset-bluez): enable a bluetooth headset and out or in/out mode
+
+## Network tools
+
+- [puppetsocket](https://gitlab.com/hydrargyrum/puppetsocket): fake server and fake client to help traverse firewalls by using a reverse connection server -> client
+- [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
+- [httpshare](https://gitlab.com/hydrargyrum/attic/-/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
 
 
 ## File formats ##
