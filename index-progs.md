@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2021-12-19T17:52:05+01:00
+last_modified_at: 2021-12-19T23:36:13+01:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -21,6 +21,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [morse](morse): text from/to Morse code converter, and optional beep player
 - [hibp](hibp): check if a password is leaked on "Have I Been Pwned?" (without sending it)
 - [headset-bluez](https://gitlab.com/hydrargyrum/attic/-/tree/master/headset-bluez): enable a bluetooth headset and out or in/out mode
+
 
 ## Network tools
 
@@ -76,6 +77,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [log-snippet](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-snippet): parse compilation-log and show snippets of files with context
 - [log-ts-diff](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-ts-diff): parse log and replace timestamps with diff to previous timestamp
 - [pvrun](https://gitlab.com/hydrargyrum/attic/-/tree/master/pvrun): run a command and show its I/O progress with [pv](http://www.ivarch.com/programs/pv.shtml)
+- [sort-with-numbers](https://gitlab.com/hydrargyrum/attic/-/tree/master/sort-with-numbers): sort stdin like sort(1) but sorts numbers
 
 
 ## Directory tools ##
