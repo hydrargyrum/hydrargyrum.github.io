@@ -12,7 +12,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [EYE](https://gitlab.com/hydrargyrum/eye): extensible text editor, scriptable in Python, beta version
 - [Lierre](https://gitlab.com/hydrargyrum/lierre): tag-based mail client (leveraging [notmuch](https://notmuchmail.org/)), with plugins, alpha version
 - [Epistolaire](epistolaire): Android app to backup SMSes *and* MMSes to JSON
-
+- [KelpMark](https://gitlab.com/hydrargyrum/kelpmark): GUI for watermarking images or PDFs
 
 # Command-line tools #
 
@@ -39,7 +39,6 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [keepassxprint](keepassxprint): dump info and passwords from a KeePassX database
 - [mdsaw](mdsaw): compose/decompose text files with multiple markdown sections
 - [pdf-watermark](https://gitlab.com/hydrargyrum/attic/-/tree/master/pdf-watermark): watermark a chosen message on a PDF
-- [KelpMark](https://gitlab.com/hydrargyrum/kelpmark): GUI for watermarking images or PDFs
 
 
 ## Video/Audio ##

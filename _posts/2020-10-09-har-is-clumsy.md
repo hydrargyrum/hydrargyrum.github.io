@@ -83,14 +83,17 @@ JSON serializes objects, lists, strings, numbers, booleans, and `null`. Lists an
 
 Being backed by JSON, HAR has the same limitation, even though it would be useful for an HTTP client to append new requests/responses into the HAR as HTTP requests are made.
 
-	{"log": {"entries": [...], "version": {...}, "creator": {...}, ...}}
-	                       ↑└─────────────────────┬────────────────────┘
-	                       └──────────┐           │
-	                                  │           │
-	                                  │           │
-	new entry should be inserted here ╵           │
-	                                              │
-	                   all that must be "shifted" ╵
+
+```
+{"log": {"entries": [...], "version": {...}, "creator": {...}, ...}}
+                       ↑└─────────────────────┬────────────────────┘
+                       └──────────┐           │
+                                  │           │
+                                  │           │
+new entry should be inserted here ╵           │
+                                              │
+                   all that must be "shifted" ╵
+```
 
 Appending a new entry would require to find the end of the `entries` array in the byte stream, save all bytes after it, write the new entry, and then write the overwritten bytes, which is both tedious and inefficient.
 Rewriting the whole object is not tedious but plain inefficient as it is an illustration of [Schlemiel the painter's algorithm](https://en.wikipedia.org/wiki/Joel_Spolsky#Schlemiel_the_Painter's_algorithm).
@@ -98,9 +101,10 @@ Rewriting the whole object is not tedious but plain inefficient as it is an illu
 It's however possible to achieve, if using JSON compact representation (no spaces or newlines outside of string contents), by making sure the `entries` list is the last key of the last object.
 That way, appending a new entry requires rewinding before the stream end, write just the new entry, and write the overwritten bytes, which, luckily, are known and fixed: `]}}`
 
-	{"log":{"version":{...},"creator":{...},...,"entries":[...]}}
-	                                                         ↑└┬┘
-	new entry should be inserted here ───────────────────────┘ │
-	                                                           │
-	                               only that must be "shifted" ╵
-
+```
+{"log":{"version":{...},"creator":{...},...,"entries":[...]}}
+                                                         ↑└┬┘
+new entry should be inserted here ───────────────────────┘ │
+                                                           │
+                               only that must be "shifted" ╵
+```
