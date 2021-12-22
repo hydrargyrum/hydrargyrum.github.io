@@ -9,7 +9,7 @@ accept_comments: true
 
 The clipboard is used to hold data copied (typically with Ctrl-C) in an app, so it can be pasted anywhere (the same app or another).
 
-When something is copied, the source app puts data in the clipboard, converted in multiple formats (using MIME types) that are relevant to the data copied.
+When something is copied, the source app puts data in the clipboard, converted in multiple formats (using [MIME types](https://en.wikipedia.org/wiki/Media_type)) that are relevant to the data copied.
 Thus, at a given time, the clipboard holds multiple pieces of data, each assigned to a MIME type.
 
 The destination app where stuff is pasted can process all these data pieces by only examining the MIME types it's capable of handling.
@@ -73,7 +73,8 @@ text/plain: /tmp/plop-2335880/m.mp3
 
 ### MIME: `text/uri-list`
 
-The `text/uri-list` MIME type is used in file managers when starting a copy/cut operation for a later paste.
+The [`text/uri-list` MIME type](https://datatracker.ietf.org/doc/html/rfc2483#section-5) is used in file managers when starting a copy/cut operation for a later paste.
+But a target app doesn't know if it's a copy or cut, so it will copy when receiving a paste operation.
 
 It consists of full URLs with a newline (consisting of carriage return + line feed) after each URL (even after the last URL).
 
