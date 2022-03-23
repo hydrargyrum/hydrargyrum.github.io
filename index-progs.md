@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2022-02-14T22:21:54+01:00
+last_modified_at: 2022-03-23T20:07:10+01:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -29,12 +29,6 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [httpshare](https://gitlab.com/hydrargyrum/attic/-/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
 - [httpmedia](https://gitlab.com/hydrargyrum/httpmedia): share a directory via HTTP, like `httpshare`, but adds thumbnails for images and videos
-
-
-## Web stuff
-- [WebP3](https://gitlab.com/hydrargyrum/webp3): raw web app for browsing music collection
-- see [httpmedia](https://gitlab.com/hydrargyrum/httpmedia) above
-- [Cookie shelf](https://gitlab.com/hydrargyrum/cookie-shelf): [Firefox web-extension](https://addons.mozilla.org/en-US/firefox/addon/cookie-shelf/) to use with builtin [multi-account containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/), to reject unwanted cookies depending on the container
 
 
 ## File formats ##
@@ -99,6 +93,12 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qruler](qruler): tool window that measures width and height in pixels
 - [qgifview](https://gitlab.com/hydrargyrum/attic/-/tree/master/qgifview): basic GIF viewer
 - [stickimage](stickimage): display an image always-on-top like a sticky note
+
+
+# Web stuff
+- [WebP3](https://gitlab.com/hydrargyrum/webp3): raw web app for browsing music collection
+- see [httpmedia](https://gitlab.com/hydrargyrum/httpmedia) above
+- [Cookie shelf](https://gitlab.com/hydrargyrum/cookie-shelf): [Firefox web-extension](https://addons.mozilla.org/en-US/firefox/addon/cookie-shelf/) to use with builtin [multi-account containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/), to reject unwanted cookies depending on the container
 
 
 # Fun with graphics #
