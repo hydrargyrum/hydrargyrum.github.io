@@ -8,6 +8,8 @@ accept_comments: true
 
 # `ln` reminder
 
+*This is about the [`ln(1)`](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/ln.html) command.*
+
 `ln EXISTING NEW` creates a **hardlink** of `EXISTING` with the new name `NEW`.
 
 * `EXISTING` must be a file and must exist
@@ -15,9 +17,9 @@ accept_comments: true
   * it's not a copy, modifying `NEW`'s content will modify `EXISTING`'s content, and vice-versa
 * `EXISTING` is not the "main file", it has the same importance as `NEW`
 * `EXISTING` and `NEW` are just names (or "references") for the real file
-* removing `EXISTING` or `new` will merely break their link to the real file, that's why the UNIX system call is named [`unlink`](https://pubs.opengroup.org/onlinepubs/9699919799/functions/unlink.html)
+* removing `EXISTING` or `NEW` will merely break their link to the real file, that's why the UNIX system call is named [`unlink(2)`](https://pubs.opengroup.org/onlinepubs/9699919799/functions/unlink.html)
 * the real file will be removed if there are no more references to it (like a [garbage collector](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)))
-* `EXISTING` must be on the same filesystem than `NEW`
+* `EXISTING` must be on the same filesystem than `NEW` (i.e. under the same mountpoint, e.g. on the same disk partition)
 
 `ln -s POINTEE POINTER` creates a **symlink** of `POINTEE` with the name `POINTER`.
 
@@ -98,7 +100,7 @@ When `cp` is used with a target which is a symbolic link, the pointer is opened 
 
 # Link to a symlink
 
-`ln -s` will refuse to overwrite a symlink (actually it's the `link(2)` syscall which rejects it)
+`ln -s` will refuse to overwrite a symlink (actually it's the `symlink(2)` syscall which rejects it)
 
 	% ln -s quux slink   
 	ln: failed to create symbolic link 'slink': File exists
