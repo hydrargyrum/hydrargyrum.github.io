@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: Variables and double-quoting in shell
-last_modified_at: 2018-01-20T11:36:05+01:00
+last_modified_at: 2022-03-23T13:31:05+01:00
 tags: shell posix
 accept_comments: true
 ---
@@ -217,6 +217,40 @@ This behavior does not follow the rules of quoting we've previously seen, this i
 | `"before $var after"` | 1 arg: `before foo bar after` |
 | `before" $var "after` | 1 arg: `before foo bar after` |
 | `before" "$var" "after` | 2 args: `before foo` / `bar after` |
+
+## Effect of quoting on globbing
+
+Another notable effect on quoting is that it prevents globbing.
+This applies to variables too: if a shell variable contains shell wildcards, the wildcards will be expanded if variable is unquoted.
+
+Let's consider a directory with 2 files, `foo` and `bar`:
+
+```sh
+% ls -1
+bar
+foo
+```
+
+Wildcards are expanded when non-quoted:
+
+```sh
+% print_args *
+1: bar
+2: foo
+% print_args "*"
+1: *
+```
+
+The same goes with variables:
+
+```sh
+% var="*"
+% print_args $var
+1: bar
+2: foo
+% print_args "$var"
+1: *
+```
 
 # Reference
 
