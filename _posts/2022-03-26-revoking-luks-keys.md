@@ -2,6 +2,7 @@
 title: Revoking LUKS keys?
 last_modified_at: 2022-03-26T11:36:02+01:00
 tags: encryption luks filesystem
+accept_comments: true
 ---
 
 # Revoking LUKS keys?
