@@ -1,6 +1,6 @@
 ---
 title: Revoking LUKS keys?
-last_modified_at: 2022-03-26T11:36:02+01:00
+last_modified_at: 2022-04-01T22:43:17+02:00
 tags: encryption luks filesystem
 accept_comments: true
 ---
@@ -98,6 +98,13 @@ This is stated in `cryptsetup luksHeaderBackup` manual:
 > WARNING: This backup file and a passphrase valid at the time of backup allows decryption of the LUKS data area, even if the passphrase was later changed or removed from the LUKS device. Also note that with a header backup you lose the ability to  securely  wipe  the LUKS device by just overwriting the header and key-slots. You either need to securely erase all header backups in addition or overwrite the encrypted data area as well.  The second option is less secure, as some sectors can survive, e.g. due to defect management.
 
 
+# In what other situations could this happen?
+
+Revoking keys because of a compromised user is not necessarily a realistic situation.
+However, think about a sysadmin setting up disk encryption for you.
+They could have kept a backup of the LUKS header so they can still decrypt your data even if you revoke their key.
+
+
 # Mitigation
 
 Since `bar` has a copy of the master key, the only way to prevent them to access the data is to change the master key, which implies reencrypting the whole data, that may weigh gigabytes or even terabytes, thus lasting hours or even days.
@@ -106,3 +113,4 @@ This is done with `cryptsetup reencrypt` and requires extra care because it will
 This could be risky especially if the system crashes or is rebooted during that time.
 
 Remember this is only necessary if `bar` could have access to the LUKS header, for example with root access (maybe using security vulnerabilities) or with physical drive access.
+
