@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2022-03-23T20:07:10+01:00
+last_modified_at: 2022-04-01T15:51:32+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -80,10 +80,11 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [sort-with-numbers](https://gitlab.com/hydrargyrum/attic/-/tree/master/sort-with-numbers): sort stdin like sort(1) but sorts numbers
 
 
-## Directory tools ##
+## Directory/file tools ##
 
 - [gen-indexhtml](https://gitlab.com/hydrargyrum/attic/-/tree/master/gen-indexhtml): create an `index.html` listing all files in dir
 - [group-files-by-mtime](https://gitlab.com/hydrargyrum/attic/-/tree/master/group-files-by-mtime): take files in a dir and move them to folders for each last modification time
+- [name2mtime](https://gitlab.com/hydrargyrum/name2mtime): change the last-modification time of files basing on the dates contained in their filenames
 
 
 # Tiny graphical apps #
