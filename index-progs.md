@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2022-04-01T15:51:32+02:00
+last_modified_at: 2022-06-07T22:27:47+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -13,6 +13,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [Lierre](https://gitlab.com/hydrargyrum/lierre): tag-based mail client (leveraging [notmuch](https://notmuchmail.org/)), with plugins, alpha version
 - [Epistolaire](epistolaire): Android app to backup SMSes *and* MMSes to JSON
 - [KelpMark](https://gitlab.com/hydrargyrum/kelpmark): GUI for watermarking images or PDFs
+
 
 # Command-line tools #
 
@@ -26,6 +27,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 ## Network tools
 
 - [puppetsocket](https://gitlab.com/hydrargyrum/puppetsocket): fake server and fake client to help traverse firewalls by using a reverse connection server -> client
+    - [gopuppetsocket](https://gitlab.com/hydrargyrum/gopuppetsocket): reimplementation in Go
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [httpshare](https://gitlab.com/hydrargyrum/attic/-/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
 - [httpmedia](https://gitlab.com/hydrargyrum/httpmedia): share a directory via HTTP, like `httpshare`, but adds thumbnails for images and videos
@@ -78,6 +80,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [log-ts-diff](https://gitlab.com/hydrargyrum/attic/-/tree/master/log-ts-diff): parse log and replace timestamps with diff to previous timestamp
 - [pvrun](https://gitlab.com/hydrargyrum/attic/-/tree/master/pvrun): run a command and show its I/O progress with [pv](http://www.ivarch.com/programs/pv.shtml)
 - [sort-with-numbers](https://gitlab.com/hydrargyrum/attic/-/tree/master/sort-with-numbers): sort stdin like sort(1) but sorts numbers
+- [uniq-unsorted](https://gitlab.com/hydrargyrum/attic/-/tree/master/uniq-unsorted): like uniq(1) but does not require lines to be sorted
+- [altlines](https://gitlab.com/hydrargyrum/attic/-/tree/master/altlines): mark every 2 lines with color
 
 
 ## Directory/file tools ##
@@ -94,6 +98,8 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qruler](qruler): tool window that measures width and height in pixels
 - [qgifview](https://gitlab.com/hydrargyrum/attic/-/tree/master/qgifview): basic GIF viewer
 - [stickimage](stickimage): display an image always-on-top like a sticky note
+- [lch-color-chooser](https://gitlab.com/hydrargyrum/lch-color-chooser): CIE LCh color chooser and RGB converter
+- [exiforientergui](https://gitlab.com/hydrargyrum/attic/-/tree/master/exiforientergui): GUI to losslessly modify EXIF orientation of an image
 
 
 # Web stuff
@@ -132,4 +138,5 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 
 - [git exercises](https://framagit.org/git-exercises/index): exercise yourself on some git advanced topics
 - [python exercises](https://gitlab.com/hydrargyrum/python-exercises): mildly advanced Python exercises
+- [docker exercises](): getting hands on Docker with beginner exercises
 
