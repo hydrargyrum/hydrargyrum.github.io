@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2022-06-07T22:27:47+02:00
+last_modified_at: 2022-07-10T21:48:03+02:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -31,6 +31,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [httpshare](https://gitlab.com/hydrargyrum/attic/-/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
 - [httpmedia](https://gitlab.com/hydrargyrum/httpmedia): share a directory via HTTP, like `httpshare`, but adds thumbnails for images and videos
+- [gotify-push.py, gotify-read.py](https://gitlab.com/hydrargyrum/attic/-/tree/master/xattr-tools): tools for sending/reading [Gotify](https://gotify.net/) notifications
 
 
 ## File formats ##
@@ -51,14 +52,15 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [united-ost](https://gitlab.com/hydrargyrum/united-ost): extract sound files from Unity games
 
 
-## JSON ##
+## JSON and CSV
 
 - [pjy](https://pypi.org/project/pjy/): process JSON data like [jq](https://stedolan.github.io/jq/), but with a reasonable Python syntax
 - [json2sqlite](jsontools/json2sqlite.html): insert JSON data in SQLite
-- [nested-jq](jsontools/nested-jq.html): make [jq](https://stedolan.github.io/jq/) parsed nested JSON content
-- [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
-- [json2csv](jsontools/json2csv.html): convert JSON data (a list of objects) to CSV
 - [flatten-json](https://gitlab.com/hydrargyrum/attic/-/tree/master/flatten-json): flatten a deep JSON tree in a single object (or reverse operation)
+- [json2table](jsontools/json2table.html): pretty-print JSON data (list of objects) in an ASCII-art table
+- [csv2table](https://gitlab.com/hydrargyrum/attic/-/tree/master/csv2table): pretty-print CSV data in an ASCII-art table
+- [json2csv](jsontools/json2csv.html): convert JSON data (a list of objects) to CSV
+- [csv2json](https://gitlab.com/hydrargyrum/attic/-/tree/master/csv2json): convert CSV to JSON
 
 
 ## Unicode stuff ##
@@ -82,6 +84,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [sort-with-numbers](https://gitlab.com/hydrargyrum/attic/-/tree/master/sort-with-numbers): sort stdin like sort(1) but sorts numbers
 - [uniq-unsorted](https://gitlab.com/hydrargyrum/attic/-/tree/master/uniq-unsorted): like uniq(1) but does not require lines to be sorted
 - [altlines](https://gitlab.com/hydrargyrum/attic/-/tree/master/altlines): mark every 2 lines with color
+- [catsponge](https://gitlab.com/hydrargyrum/attic/-/tree/master/catsponge): like cat(1) but soaks stdin and waits that stdin reaches EOF
 
 
 ## Directory/file tools ##
@@ -89,6 +92,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [gen-indexhtml](https://gitlab.com/hydrargyrum/attic/-/tree/master/gen-indexhtml): create an `index.html` listing all files in dir
 - [group-files-by-mtime](https://gitlab.com/hydrargyrum/attic/-/tree/master/group-files-by-mtime): take files in a dir and move them to folders for each last modification time
 - [name2mtime](https://gitlab.com/hydrargyrum/name2mtime): change the last-modification time of files basing on the dates contained in their filenames
+- [xattrs-csv, xattrs-filter, xattrs-set](https://gitlab.com/hydrargyrum/attic/-/tree/master/xattr-tools): tools for manipulating/viewing xattrs (file system extended attributes)
 
 
 # Tiny graphical apps #
@@ -98,7 +102,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [qruler](qruler): tool window that measures width and height in pixels
 - [qgifview](https://gitlab.com/hydrargyrum/attic/-/tree/master/qgifview): basic GIF viewer
 - [stickimage](stickimage): display an image always-on-top like a sticky note
-- [lch-color-chooser](https://gitlab.com/hydrargyrum/lch-color-chooser): CIE LCh color chooser and RGB converter
+- [lch-color-chooser](https://gitlab.com/hydrargyrum/attic/-/tree/master/lch-color-chooser): CIE LCh color chooser and RGB converter
 - [exiforientergui](https://gitlab.com/hydrargyrum/attic/-/tree/master/exiforientergui): GUI to losslessly modify EXIF orientation of an image
 
 
