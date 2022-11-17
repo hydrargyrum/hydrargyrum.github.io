@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: The Attic - Programs
-last_modified_at: 2022-07-10T21:48:03+02:00
+last_modified_at: 2022-11-17T21:51:37+01:00
 ---
 
 Most of the site and programs from the site are licensed under the [WTFPLv2 license](wtfpl).
@@ -22,16 +22,16 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [morse](morse): text from/to Morse code converter, and optional beep player
 - [hibp](hibp): check if a password is leaked on "Have I Been Pwned?" (without sending it)
 - [headset-bluez](https://gitlab.com/hydrargyrum/attic/-/tree/master/headset-bluez): enable a bluetooth headset and out or in/out mode
+- [asciinario](https://gitlab.com/hydrargyrum/asciinario): app for automatic terminal recording with asciinema based on scenario scripts
 
 
 ## Network tools
 
-- [puppetsocket](https://gitlab.com/hydrargyrum/puppetsocket): fake server and fake client to help traverse firewalls by using a reverse connection server -> client
-    - [gopuppetsocket](https://gitlab.com/hydrargyrum/gopuppetsocket): reimplementation in Go
+- [puppetsocket](https://gitlab.com/hydrargyrum/gopuppetsocket): fake server and fake client to help traverse firewalls by using a reverse connection server -> client
 - [wakeonwan](wakeonwan): wake remote machines with Wake-on-WAN
 - [httpshare](https://gitlab.com/hydrargyrum/attic/-/tree/master/httpshare): share a directory via HTTP, like `python -m http.server` but supports "Range" headers (useful if you share a media directory)
 - [httpmedia](https://gitlab.com/hydrargyrum/httpmedia): share a directory via HTTP, like `httpshare`, but adds thumbnails for images and videos
-- [gotify-push.py, gotify-read.py](https://gitlab.com/hydrargyrum/attic/-/tree/master/xattr-tools): tools for sending/reading [Gotify](https://gotify.net/) notifications
+- [gotify-push.py, gotify-read.py](https://gitlab.com/hydrargyrum/attic/-/tree/master/gotify-tools): tools for sending/reading [Gotify](https://gotify.net/) notifications
 
 
 ## File formats ##
@@ -85,6 +85,7 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [uniq-unsorted](https://gitlab.com/hydrargyrum/attic/-/tree/master/uniq-unsorted): like uniq(1) but does not require lines to be sorted
 - [altlines](https://gitlab.com/hydrargyrum/attic/-/tree/master/altlines): mark every 2 lines with color
 - [catsponge](https://gitlab.com/hydrargyrum/attic/-/tree/master/catsponge): like cat(1) but soaks stdin and waits that stdin reaches EOF
+- [group-lines](https://gitlab.com/hydrargyrum/attic/-/tree/master/group-lines): group stdin lines by a regular expression pattern
 
 
 ## Directory/file tools ##
@@ -93,6 +94,13 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [group-files-by-mtime](https://gitlab.com/hydrargyrum/attic/-/tree/master/group-files-by-mtime): take files in a dir and move them to folders for each last modification time
 - [name2mtime](https://gitlab.com/hydrargyrum/name2mtime): change the last-modification time of files basing on the dates contained in their filenames
 - [xattrs-csv, xattrs-filter, xattrs-set](https://gitlab.com/hydrargyrum/attic/-/tree/master/xattr-tools): tools for manipulating/viewing xattrs (file system extended attributes)
+- [hardlinks-to-csv](https://gitlab.com/hydrargyrum/attic/-/tree/master/hardlinks-to-csv): list files (and inodes) with more than 1 hardlink as CSV
+
+
+## zsh
+
+- [ZLE widgets](https://gitlab.com/hydrargyrum/zsh-stuff): several widgets for making command-line editing easier
+- [junkyard/zsh](https://gitlab.com/hydrargyrum/junkyard/-/tree/main/zsh): a few zsh examples
 
 
 # Tiny graphical apps #
@@ -106,9 +114,12 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [exiforientergui](https://gitlab.com/hydrargyrum/attic/-/tree/master/exiforientergui): GUI to losslessly modify EXIF orientation of an image
 
 
-# Web stuff
+# Web apps
 - [WebP3](https://gitlab.com/hydrargyrum/webp3): raw web app for browsing music collection
 - see [httpmedia](https://gitlab.com/hydrargyrum/httpmedia) above
+
+
+# Web extensions
 - [Cookie shelf](https://gitlab.com/hydrargyrum/cookie-shelf): [Firefox web-extension](https://addons.mozilla.org/en-US/firefox/addon/cookie-shelf/) to use with builtin [multi-account containers](https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/), to reject unwanted cookies depending on the container
 
 
@@ -127,7 +138,6 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [vignette](https://pypi.org/project/vignette/): a Python library for generating thumbnails following the FreeDesktop specification [[documentation](https://vignette.readthedocs.io)]
 - [qorbeille](https://gitlab.com/hydrargyrum/qorbeille): a Qt library to trash files to recycle bin
 - [qvariantjson](https://gitlab.com/hydrargyrum/qvariantjson): yet another Qt4 JSON library
-- [C++ ASCII tree](cppasciitree): an example of how to hardcode a tree with source code looking like the actual tree
 - a patch for upgrading [pycairo to cairo 0.12](py2cairo)
 
 
@@ -143,4 +153,9 @@ Most of the site and programs from the site are licensed under the [WTFPLv2 lice
 - [git exercises](https://framagit.org/git-exercises/index): exercise yourself on some git advanced topics
 - [python exercises](https://gitlab.com/hydrargyrum/python-exercises): mildly advanced Python exercises
 - [docker exercises](): getting hands on Docker with beginner exercises
+
+
+# Various snippets
+
+See the [junkyard repository](https://gitlab.com/hydrargyrum/junkyard).
 
