@@ -1,6 +1,6 @@
 ---
 layout: mine
-title: The Attic - Programs
+title: Programs
 last_modified_at: 2022-11-17T21:51:37+01:00
 ---
 

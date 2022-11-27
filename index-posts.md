@@ -1,6 +1,6 @@
 ---
 layout: post-list
-title: The Attic - Posts
+title: Posts
 last_modified_at: 2022-03-26T11:36:02+01:00
 ---
 
