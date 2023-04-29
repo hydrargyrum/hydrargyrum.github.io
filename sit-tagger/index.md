@@ -80,7 +80,7 @@ Will not remove the files on hard drive but will forget them from the tag databa
 
 # Download
 
-SIT-Tagger requires Python 3, PyQt5 and [vignette](https://pypi.org/project/vignette/).
+SIT-Tagger requires Python 3, PyQt6 and [vignette](https://pypi.org/project/vignette/).
 
 It is licensed under the WTFPLv2.
 
