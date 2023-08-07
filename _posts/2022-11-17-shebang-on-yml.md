@@ -75,6 +75,8 @@ and `env` itself interpret its arguments, and then run:
 
 ## Applying
 
+### docker-compose
+
 This is a shebang that could be used for `docker-compose.yml` files:
 
 	#!/usr/bin/env -S docker-compose -f
@@ -89,6 +91,8 @@ which would be equivalent to:
 	docker-compose -f ./someproject/docker-compose.yml run -d
 
 (Of course, the `chmod +x` only needs to be done once)
+
+### borgmatic
 
 A shebang for borgmatic configuration files:
 
