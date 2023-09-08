@@ -1,6 +1,6 @@
 ---
 title: Generic progress and notifications for commands in shell
-last_modified_at: 2023-09-08T13:26:14+02:00
+last_modified_at: 2023-09-08T13:29:32+02:00
 tags: shell notifications
 accept_comments: true
 ---
