@@ -1,6 +1,7 @@
 ---
 title: Modern Makefiles are a fad
-last_modified_at: 2021-12-19T17:46:41+01:00
+last_modified_at: 2023-09-08T09:53:19+02:00
+tags: rant
 ---
 
 # Modern Makefiles are a fad
@@ -91,7 +92,7 @@ case "$1" in
 		docker volume ls --filter "${_DOCKER_FILTER}" -q | xargs docker volume rm || true ;;
 
 	*)
-		grep ")$" "$0"
+		grep ")  #" "$0"
 		exit 64 ;;
 
 esac

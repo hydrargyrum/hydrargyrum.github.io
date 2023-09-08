@@ -1,6 +1,6 @@
 ---
 title: Shebang on non-scripts
-last_modified_at: 2022-11-17T21:49:51+01:00
+last_modified_at: 2023-09-08T09:53:19+02:00
 tags: shell
 accept_comments: true
 ---
@@ -107,3 +107,8 @@ instead of:
 
 	borgmatic -c ./backup-external-hdd.borgmatic.yml create --stats --progress
 
+### Non-YAML: make
+
+It's trivial to render a `Makefile` executable, which doesn't need to be named `Makefile` anymore then:
+
+	#!/usr/bin/make -f
