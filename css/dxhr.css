@@ -1,0 +1,68 @@
+@media (prefers-color-scheme: dark) {
+
+	:root {
+		--bg1: #0a0a0a;
+		--bg2: #202020;
+		--fg1: #dc9a20;
+		--fg2: #eda723;
+		--fg3: #f0f0f0;
+	}
+
+	body {
+		background: var(--bg1);
+		color: var(--fg3);
+	}
+
+	a:link {
+		color: var(--fg1);
+	}
+
+	a:active {
+		color: white;
+		background: var(--bg2);
+	}
+
+	header h1 {
+		text-align: center;
+	}
+
+	h1 {
+		background: var(--bg2);
+		color: var(--fg1);
+		padding-left: 1ex;
+		border-radius: .5em .1em;
+	}
+
+	h2 {
+		background: var(--bg2);
+		color: var(--fg3);
+		padding-left: 1ex;
+		border-radius: .5em .1em;
+	}
+
+	.post-date {
+		color: var(--fg3);
+	}
+
+	p code, li code {
+		background: var(--bg2);
+	}
+
+	pre {
+		padding: 1em;
+		margin-left: 1em;
+		padding-right: 1em;
+		margin-right: 1em;
+		border: 1px solid var(--fg1);
+	}
+
+	table, td {
+		border: 1px solid var(--fg1);
+	}
+
+	.comments {
+		border: 0.1em dashed white;
+		padding: 1em;
+	}
+
+}

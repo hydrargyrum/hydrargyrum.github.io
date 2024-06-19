@@ -1,3 +1,5 @@
+@media (prefers-color-scheme: light) {
+
 body {
 	font-family: DejaVu Sans, Sans Serif, sans;
 }
@@ -63,4 +65,6 @@ table, td {
 .comments {
 	border: 0.1em dashed black;
 	padding: 1em;
+}
+
 }
