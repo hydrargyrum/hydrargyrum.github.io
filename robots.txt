@@ -3,6 +3,9 @@ User-agent: Applebot
 User-agent: Bytespider
 User-agent: CCBot
 User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: Diffbot
 User-agent: FacebookBot
 User-agent: GPTBot
 User-agent: Google-Extended
@@ -10,7 +13,6 @@ User-agent: Omgilibot
 User-agent: PerplexityBot
 User-agent: YouBot
 User-agent: anthropic-ai
-User-agent: cohere-ai
 User-agent: cohere-ai
 User-agent: omgili
 Disallow: /
