@@ -1,4 +1,6 @@
 name: The Attic
+url: https://indigo.re
+
 markdown: kramdown
 redcarpet:
   extensions: ["tables"]
