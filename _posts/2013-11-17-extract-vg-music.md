@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: Extract music from some video games
-last_modified_at: 2017-08-04T22:35:36+02:00
+last_modified_at: 2024-09-17T16:55:58+02:00
 tags: file_formats
 accept_comments: true
 ---
@@ -65,7 +65,7 @@ For example, the file `BatteryPark_Music.umx` contains all music tracks that can
 
 At order 0, the normal game music starts. The last instruction from order 0 is a "jump" instruction that goes to order 6. The normal music then continues until end of order 17. The last instruction of order 17 is a "jump" to order 0, thus making a loop. Order 1 is not reached by the flow of instructions of normal game music. At order 1, starts the game over music, and goes in the same fashion as for the normal game music, with a loop (1, 45, 46, 47, 1, 45, etc.). At order 3, is the combat music, that is also a loop. This trick allows to have several loops that always start at fixed orders (always 0, 1, 3 and 4) in each file, and never overlap.
 
-![Order graph](dex-battery.png)
+![Graph showing the intermixed music loops in the UMX file](dex-battery.png)
 
 To play them with xmp:
 

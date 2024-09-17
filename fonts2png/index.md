@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: fonts2png
-last_modified_at: 2013-12-07T11:24:32+01:00
+last_modified_at: 2024-09-17T16:55:58+02:00
 ---
 
 # fonts2png
@@ -32,7 +32,7 @@ fonts2png -o /tmp -c gold -b black -s 12 /usr/share/fonts/truetype/ttf-atarismal
 
 Creates /tmp/[AtariSmall](http://gnu.ethz.ch/linuks.mine.nu/atari/).png:
 
-![Atari sample](AtariSmall.png)
+![Sample text rendered with Atari font](AtariSmall.png)
 
 ## Requirements & Misc ##
 

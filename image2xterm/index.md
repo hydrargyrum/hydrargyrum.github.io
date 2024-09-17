@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: image2xterm
-last_modified_at: 2018-12-30T22:21:20+01:00
+last_modified_at: 2024-09-17T16:55:58+02:00
 ---
 
 # image2xterm
@@ -23,7 +23,7 @@ Display an image on a 256-colors capable terminal:
 image2xterm eggs.jpg
 ```
 
-![eggs](eggs.jpg) -> ![xterm eggs](hd.png)
+![multi-colored eggs](eggs.jpg) -> ![multi-colored eggs but kind of pixelated and few colors](hd.png)
 
 Some terminals support 24-bits colors, giving even better rendition, use `--truecolor` for it:
 
@@ -31,7 +31,7 @@ Some terminals support 24-bits colors, giving even better rendition, use `--true
 image2xterm --truecolor eggs.jpg
 ```
 
-![xterm eggs with 24-bits colors](hdrgb.png)
+![multi-colored eggs but kind of pixelated with 24-bits colors](hdrgb.png)
 
 Unicode block characters are used to have colored squares.
 
@@ -42,7 +42,7 @@ Since font characters are usually higher than wide, one character is interpreted
 image2xterm --spaces eggs.jpg
 ```
 
-![spaces xterm eggs](stretch.png)
+![multi-colored eggs but very pixelated](stretch.png)
 
 Output to file:
 

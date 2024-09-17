@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: univisible - tweak Unicode combinations and visualize them
-last_modified_at: 2018-12-30T22:21:20+01:00
+last_modified_at: 2024-09-17T16:55:58+02:00
 ---
 
 # univisible
@@ -63,7 +63,7 @@ e ́
 
 The screenshot shows the graphical effect done by ``-v``:
 
-![Screenshot](screenshot.png)
+![Screenshot of univisible, showing a combining acute accent separate from the e letter, the lone acute accent has a reverse color background](screenshot.png)
 
 # Usage examples
 

@@ -1,7 +1,7 @@
 ---
 layout: mine
 title: SIT-Tagger - a simple image browser/viewer with tagging
-last_modified_at: 2023-09-08T09:53:19+02:00
+last_modified_at: 2024-09-17T16:55:58+02:00
 ---
 
 # SIT-Tagger
@@ -14,15 +14,15 @@ The tags are saved in a local SQLite database.
 
 # Screenshots
 
-![File browser](shot-dirview.jpg)
+![SIT-Tagger window showing a file system tree, and the thumbnails of files present in the selected folder](shot-dirview.jpg)
 
 Browse directory tree, select one or more files, and be able to set/unset tags on those files.
 
-![Tag browser](shot-tagview.jpg)
+![SIT-Tagger window showing a list of user tags, some are checked, and the thumbnails of files matching the tags](shot-tagview.jpg)
 
 List files that have the selected tags (and be able to edit tags of files).
 
-![Picture view](shot-pic.jpg)
+![SIT-Tagger window showing a single picture](shot-pic.jpg)
 
 Browse images in a (optionally fullscreen) window with usual zoom options.
 
