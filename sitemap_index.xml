@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc>https://indigo.re/sitemap.xml</loc>
+	</sitemap>
+
+	<sitemap>
+		<loc>https://indigo.re/junkyard/sitemap.xml</loc>
+	</sitemap>
+
+<!-- https://www.sitemaps.org/protocol.html#index -->
+</sitemapindex>
