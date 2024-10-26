@@ -16,3 +16,6 @@ User-agent: anthropic-ai
 User-agent: cohere-ai
 User-agent: omgili
 Disallow: /
+
+Sitemap: https://indigo.re/sitemap.xml
+Sitemap: https://indigo.re/junkyard/sitemap.xml
